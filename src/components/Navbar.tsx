@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import TVL from '../../public/tvl.png';
 
 export default function Navbar() {
@@ -27,7 +28,7 @@ export default function Navbar() {
 						className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
 					>
 						<li>
-							<a>Item 1</a>
+							<Link href={'/sportprogramm'}>Sportprogramm</Link>
 						</li>
 						<li tabIndex={0}>
 							<a className='justify-between'>
@@ -56,14 +57,14 @@ export default function Navbar() {
 						</li>
 					</ul>
 				</div>
-				<a className='btn btn-ghost normal-case text-xl'>
+				<Link href={'/'} className='btn btn-ghost normal-case text-xl'>
 					<Image src={TVL} alt='TVL' width={40} height={40} />
-				</a>
+				</Link>
 			</div>
 			<div className='navbar-center hidden lg:flex'>
 				<ul className='menu menu-horizontal px-1'>
 					<li>
-						<a>Item 1</a>
+						<Link href={'/sportprogramm'}>Sportprogramm</Link>
 					</li>
 					<li tabIndex={0}>
 						<a>

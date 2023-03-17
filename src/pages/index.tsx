@@ -18,40 +18,33 @@ export default function Home() {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<Navbar />
-			<main className='flex flex-1'>
-				<div className='flex flex-1 flex-col p-4 bg-base-200'>
-					<h1 className='text-3xl font-bold text-center my-6'>Neuigkeiten</h1>
-					<div className='flex flex-wrap justify-around gap-4'>
-						<div className='card card-side bg-base-100 shadow-xl max-w-lg'>
-							<figure>
-								<Image src={TVLPlakat} alt='Veranstaltungsplakat' width={300} />
-							</figure>
-							<div className='card-body'>
-								<h2 className='card-title'>Comedy Dinner</h2>
-								<p>Am 22.04. in unserer Turnhalle.</p>
-							</div>
-						</div>
-
-						<div className='card w-96 bg-base-100 shadow-xl'>
-							<div className='card-body'>
-								<h2 className='card-title'>Vereinscheck</h2>
-								<p>
-									Seit dem 24. Januar stellt der DOSB im Auftrag der
-									Bundesregierung bundesweit 150.000 Sportvereinsschecks á 40€
-									zur Verfügung. Wir beteiligen uns gerne an dieser Aktion und
-									nehmen ab sofort Eure Schecks entgegen!
-								</p>
-							</div>
-							<figure>
-								<Image src={Vereinscheck} alt='Vereinscheck' />
-							</figure>
-						</div>
+			<h1 className='text-3xl font-bold text-center my-6'>Neuigkeiten</h1>
+			<div className='flex flex-wrap justify-around gap-4'>
+				<div className='card card-side bg-base-100 shadow-xl max-w-lg'>
+					<figure>
+						<Image src={TVLPlakat} alt='Veranstaltungsplakat' width={300} />
+					</figure>
+					<div className='card-body'>
+						<h2 className='card-title'>Comedy Dinner</h2>
+						<p>Am 22.04. in unserer Turnhalle.</p>
 					</div>
 				</div>
-				<Sidebar />
-			</main>
-			<Footer />
+
+				<div className='card w-96 bg-base-100 shadow-xl'>
+					<div className='card-body'>
+						<h2 className='card-title'>Vereinscheck</h2>
+						<p>
+							Seit dem 24. Januar stellt der DOSB im Auftrag der Bundesregierung
+							bundesweit 150.000 Sportvereinsschecks á 40€ zur Verfügung. Wir
+							beteiligen uns gerne an dieser Aktion und nehmen ab sofort Eure
+							Schecks entgegen!
+						</p>
+					</div>
+					<figure>
+						<Image src={Vereinscheck} alt='Vereinscheck' />
+					</figure>
+				</div>
+			</div>
 		</>
 	);
 }
