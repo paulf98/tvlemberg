@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import TVLPlakat from '../../public/plakat.jpg';
 import Vereinscheck from '../../public/vereinscheck.jpg';
 import Sidebar from '../components/Sidebar';
+import Footer from '../components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,10 +19,10 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Navbar />
-			<main className='relative flex flex-1'>
-				<div className='flex flex-1 flex-col p-4'>
+			<main className='flex flex-1'>
+				<div className='flex flex-1 flex-col p-4 bg-base-200'>
 					<h1 className='text-3xl font-bold text-center my-6'>Neuigkeiten</h1>
-					<div className='flex gap-4'>
+					<div className='flex flex-wrap justify-around gap-4'>
 						<div className='card card-side bg-base-100 shadow-xl max-w-lg'>
 							<figure>
 								<Image src={TVLPlakat} alt='Veranstaltungsplakat' width={300} />
@@ -50,6 +51,7 @@ export default function Home() {
 				</div>
 				<Sidebar />
 			</main>
+			<Footer />
 		</>
 	);
 }
