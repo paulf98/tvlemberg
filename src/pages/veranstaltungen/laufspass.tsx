@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Laufspass1 from '../../../public/images/laufspass1.jpg';
-import Laufspass2 from '../../../public/images/laufspass2.jpg';
+import Laufspass1 from '../../../public/images/Laufspass1.jpg';
+import Laufspass2 from '../../../public/images/Laufspass2.jpg';
 
 const PastResults = [
 	{
