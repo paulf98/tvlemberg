@@ -15,7 +15,7 @@ export default function Home() {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<h1 className='text-3xl font-bold text-center my-6'>Neuigkeiten</h1>
+			<h1 className='text-3xl font-bold text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-wrap justify-around gap-4'>
 				<div className='card card-side bg-base-100 shadow-xl max-w-lg'>
 					<figure>

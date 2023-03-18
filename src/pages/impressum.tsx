@@ -1,6 +1,6 @@
 export default function Impressum() {
 	return (
-		<div className='prose mx-auto text-justify py-4'>
+		<div className='prose mx-auto text-justify'>
 			<h1>IMPRESSUM</h1>
 			Verantwortlich für den Inhalt:
 			<h4>

@@ -10,7 +10,7 @@ export default function Document() {
 			<body>
 				<Navbar />
 				<main className='flex flex-1'>
-					<div className='flex flex-1 flex-col p-4 bg-base-200'>
+					<div className='flex flex-1 flex-col p-4 py-8 bg-base-200'>
 						<Main />
 					</div>
 					<Sidebar />
