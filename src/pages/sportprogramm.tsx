@@ -3,8 +3,8 @@ import SportprogrammImg from '../../public/images/Sportprogramm.jpg';
 
 export default function Sportprogramm() {
 	return (
-		<div>
-			<h1 className='text-3xl text-center mb-8 font-bold'>Sportprogramm</h1>
+		<div className='prose text-center mx-auto'>
+			<h1 className='mb-8'>Sportprogramm</h1>
 			<Image
 				src={SportprogrammImg}
 				alt='Sportprogramm'
