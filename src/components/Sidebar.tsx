@@ -10,7 +10,7 @@ import DAK from '../../public/images/dak.png';
  */
 export default function Sidebar() {
 	return (
-		<aside className='hidden lg:flex flex-col gap-8 z-40 w-min-32 max-w-xs min-h-screen p-4 py-8'>
+		<aside className='hidden lg:flex flex-col gap-8 z-40 w-min-32 max-w-xs min-h-screen p-8'>
 			<h1 className='text-3xl font-bold text-center'>Aktuelles</h1>
 			<Link
 				href={'/veranstaltungen/laufspass'}

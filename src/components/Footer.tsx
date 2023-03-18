@@ -1,10 +1,9 @@
 import Link from 'next/link';
-import React from 'react';
 
 export default function Footer() {
 	return (
-		<footer className='footer footer-center p-10 bg-primary text-base-100'>
-			<div className='grid grid-flow-col gap-4 text-lg'>
+		<footer className='footer footer-center p-4 py-8 sm:p-10 bg-primary text-base-100'>
+			<div className='flex flex-wrap justify-center gap-4 text-lg'>
 				<Link className='link link-hover' href={'/impressum'}>
 					Impressum
 				</Link>
