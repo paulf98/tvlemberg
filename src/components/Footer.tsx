@@ -11,6 +11,7 @@ export default function Footer() {
 				<a className='link link-hover'>Datenschutz</a>
 				<a className='link link-hover'>Satzung</a>
 				<a className='link link-hover'>Presse & Zeitung</a>
+				<a className='link link-hover'>Links</a>
 			</div>
 			<div>
 				<a className='p-4 rounded-full bg-base-100'>

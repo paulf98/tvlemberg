@@ -53,7 +53,38 @@ export default function Navbar() {
 							</ul>
 						</li>
 						<li>
-							<a>Item 3</a>
+							<Link href={'/antraege'}>Anträge &amp; Formulare</Link>
+						</li>
+						<li tabIndex={0}>
+							<a>
+								Verein
+								<svg
+									className='fill-current'
+									xmlns='http://www.w3.org/2000/svg'
+									width='20'
+									height='20'
+									viewBox='0 0 24 24'
+								>
+									<path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
+								</svg>
+							</a>
+							<ul className='p-2 bg-base-100'>
+								<li>
+									<Link href={'/verein/vorstand'}>Vorstand</Link>
+								</li>
+								<li>
+									<Link href={'/verein/chronik'}>Chronik</Link>
+								</li>
+								<li>
+									<Link href={'/verein/satzung'}>Satzung</Link>
+								</li>
+								<li>
+									<Link href={'/verein/sitzungstermine'}>Sitzungstermine</Link>
+								</li>
+								<li>
+									<Link href={'/verein/hallenbelegung'}>Hallenbelegung</Link>
+								</li>
+							</ul>
 						</li>
 					</ul>
 				</div>
@@ -83,18 +114,46 @@ export default function Navbar() {
 							<li>
 								<Link href={'/veranstaltungen/laufspass'}>Laufspass</Link>
 							</li>
-							<li>
-								<a>Submenu 2</a>
-							</li>
 						</ul>
 					</li>
 					<li>
-						<a>Item 3</a>
+						<Link href={'/antraege'}>Anträge &amp; Formulare</Link>
+					</li>
+					<li tabIndex={0}>
+						<a>
+							Verein
+							<svg
+								className='fill-current'
+								xmlns='http://www.w3.org/2000/svg'
+								width='20'
+								height='20'
+								viewBox='0 0 24 24'
+							>
+								<path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
+							</svg>
+						</a>
+						<ul className='p-2 bg-base-100'>
+							<li>
+								<Link href={'/verein/vorstand'}>Vorstand</Link>
+							</li>
+							<li>
+								<Link href={'/verein/chronik'}>Chronik</Link>
+							</li>
+							<li>
+								<Link href={'/verein/satzung'}>Satzung</Link>
+							</li>
+							<li>
+								<Link href={'/verein/sitzungstermine'}>Sitzungstermine</Link>
+							</li>
+							<li>
+								<Link href={'/verein/hallenbelegung'}>Hallenbelegung</Link>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</div>
 			<div className='navbar-end'>
-				<a className='btn'>Kontakt</a>
+				<a className='btn btn-primary'>Kontakt</a>
 			</div>
 		</div>
 	);
