@@ -1,11 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import Navbar from '../components/Navbar';
-import TVLPlakat from '../../public/plakat.jpg';
-import Vereinscheck from '../../public/vereinscheck.jpg';
-import Sidebar from '../components/Sidebar';
-import Footer from '../components/Footer';
+import TVLPlakat from '../../public/images/plakat.jpg';
+import Vereinscheck from '../../public/images/vereinscheck.jpg';
 
 const inter = Inter({ subsets: ['latin'] });
 

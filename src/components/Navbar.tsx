@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import TVL from '../../public/tvl.png';
+import TVL from '../../public/images/tvl.png';
 
 export default function Navbar() {
 	return (

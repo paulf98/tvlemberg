@@ -6,7 +6,7 @@ import React from 'react';
  */
 export default function Sidebar() {
 	return (
-		<aside className='hidden lg:flex flex-col z-40 w-min-32 max-w-md h-screen p-4 border-l-2'>
+		<aside className='hidden lg:flex flex-col z-40 w-min-32 max-w-md h-screen p-4'>
 			<div className='card card-side bg-base-100 shadow-xl'>
 				<div className='card-body'>
 					<h2 className='card-title'>New movie is released!</h2>
