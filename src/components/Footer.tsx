@@ -28,7 +28,18 @@ export default function Footer() {
 			</div>
 			<div>
 				<p className='italic'>
-					Copyright © {new Date().getFullYear()} - Turnverein Lemberg e. V.
+					Copyright © {new Date().getFullYear()} - Turnverein Lemberg e. V. -{' '}
+					<a
+						href='https://paulf.dev'
+						className='link link-hover
+					italic
+					text-base-100
+					text-sm
+					'
+						target={'_blank'}
+					>
+						Technische Umsetzung &amp; Design: Paul Faass
+					</a>
 				</p>
 			</div>
 		</footer>
