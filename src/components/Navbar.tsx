@@ -68,7 +68,7 @@ export default function Navbar() {
 					</li>
 					<li tabIndex={0}>
 						<a>
-							Parent
+							Veranstaltungen
 							<svg
 								className='fill-current'
 								xmlns='http://www.w3.org/2000/svg'
@@ -81,7 +81,7 @@ export default function Navbar() {
 						</a>
 						<ul className='p-2 bg-base-100'>
 							<li>
-								<a>Submenu 1</a>
+								<Link href={'/veranstaltungen/laufspass'}>Laufspass</Link>
 							</li>
 							<li>
 								<a>Submenu 2</a>

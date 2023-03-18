@@ -1,12 +1,15 @@
 import Image from 'next/image';
-import Laufspass1 from '../../public/images/laufspass1.jpg';
-import Laufspass2 from '../../public/images/laufspass2.jpg';
+import SportprogrammImg from '../../public/images/Sportprogramm.jpg';
 
 export default function Sportprogramm() {
 	return (
-		<div>
-			<Image src={Laufspass1} alt='Laufspass' className="mx-auto my-4 shadow-md rounded-md border" />
-			<Image src={Laufspass2} alt='Laufspass' className="mx-auto my-4 shadow-md rounded-md border" />
+		<div className='py-4'>
+			<h1 className='text-3xl text-center mb-8 font-bold'>Sportprogramm</h1>
+			<Image
+				src={SportprogrammImg}
+				alt='Sportprogramm'
+				className='mx-auto my-4 shadow-md rounded-md border'
+			/>
 		</div>
 	);
 }
