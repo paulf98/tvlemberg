@@ -10,6 +10,13 @@ export default function Sportprogramm() {
 				alt='Sportprogramm'
 				className='mx-auto my-4 shadow-md rounded-md border'
 			/>
+			<a
+				className='btn btn-primary mt-4'
+				href='/assets/Sportporgramm22.pdf'
+				download
+			>
+				Download als PDF
+			</a>
 		</div>
 	);
 }

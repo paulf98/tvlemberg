@@ -10,7 +10,9 @@ export default function Footer() {
 				<Link className='link link-hover' href={'/datenschutz'}>
 					Datenschutz
 				</Link>
-				<a className='link link-hover'>Satzung</a>
+				<Link className='link link-hover' href={'/satzung'}>
+					Satzung
+				</Link>
 				<a className='link link-hover'>Presse & Zeitung</a>
 				<a className='link link-hover'>Links</a>
 			</div>

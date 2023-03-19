@@ -75,15 +75,6 @@ export default function Navbar() {
 								<li>
 									<Link href={'/verein/chronik'}>Chronik</Link>
 								</li>
-								<li>
-									<Link href={'/verein/satzung'}>Satzung</Link>
-								</li>
-								<li>
-									<Link href={'/verein/sitzungstermine'}>Sitzungstermine</Link>
-								</li>
-								<li>
-									<Link href={'/verein/hallenbelegung'}>Hallenbelegung</Link>
-								</li>
 							</ul>
 						</li>
 					</ul>
@@ -138,15 +129,6 @@ export default function Navbar() {
 							</li>
 							<li>
 								<Link href={'/verein/chronik'}>Chronik</Link>
-							</li>
-							<li>
-								<Link href={'/verein/satzung'}>Satzung</Link>
-							</li>
-							<li>
-								<Link href={'/verein/sitzungstermine'}>Sitzungstermine</Link>
-							</li>
-							<li>
-								<Link href={'/verein/hallenbelegung'}>Hallenbelegung</Link>
 							</li>
 						</ul>
 					</li>
