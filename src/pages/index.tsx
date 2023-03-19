@@ -18,7 +18,7 @@ export default function Home() {
 			<div className='prose mx-auto'>
 				<h1 className='text-center mb-8'>Neuigkeiten</h1>
 				<div className='flex flex-col items-center justify-center gap-8'>
-					<div className='card card-side bg-base-100 shadow-xl w-100'>
+					<div className='card lg:card-side bg-base-100 shadow-xl'>
 						<Image
 							src={TVLPlakat}
 							alt='Veranstaltungsplakat'
