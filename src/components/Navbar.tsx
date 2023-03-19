@@ -153,7 +153,9 @@ export default function Navbar() {
 				</ul>
 			</div>
 			<div className='navbar-end'>
-				<a className='btn btn-primary'>Kontakt</a>
+				<Link className='btn btn-primary' href={'/kontakt'}>
+					Kontakt
+				</Link>
 			</div>
 		</div>
 	);
