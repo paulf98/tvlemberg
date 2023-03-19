@@ -7,7 +7,9 @@ export default function Footer() {
 				<Link className='link link-hover' href={'/impressum'}>
 					Impressum
 				</Link>
-				<a className='link link-hover'>Datenschutz</a>
+				<Link className='link link-hover' href={'/datenschutz'}>
+					Datenschutz
+				</Link>
 				<a className='link link-hover'>Satzung</a>
 				<a className='link link-hover'>Presse & Zeitung</a>
 				<a className='link link-hover'>Links</a>
