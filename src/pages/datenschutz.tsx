@@ -5,7 +5,7 @@ export default function Datenschutz() {
 				Datenschutzbeauftragter: - Wolfgang Petschel / Mail:
 				HuW.Petschel@t-online.de
 			</h4>
-			<h1>Datenschutzerklärung</h1>
+			<h1 className="text-ellipsis">Datenschutz</h1>
 			<p>
 				Wir freuen uns sehr über Ihr Interesse an unserem Verein. Datenschutz
 				hat einen besonders hohen Stellenwert für die Vorstandschaft des TV 1891
