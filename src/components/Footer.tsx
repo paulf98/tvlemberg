@@ -13,8 +13,8 @@ export default function Footer() {
 				<Link className='link link-hover' href={'/satzung'}>
 					Satzung
 				</Link>
-				<a className='link link-hover'>Presse & Zeitung</a>
-				<a className='link link-hover'>Links</a>
+				{/* <a className='link link-hover'>Presse & Zeitung</a>
+				<a className='link link-hover'>Links</a> */}
 			</div>
 			<div>
 				<a className='p-4 rounded-full bg-base-100'>
