@@ -67,13 +67,19 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 							</li>
 						</ul>
 					</div>
+					<Link
+						className='btn btn-primary ml-auto hidden lg:inline-flex'
+						href={'/kontakt'}
+					>
+						Kontakt
+					</Link>
 				</div>
 				{children}
 			</div>
 			<div className='drawer-side'>
 				<label htmlFor='my-drawer-3' className='drawer-overlay'></label>
 				{/* MOBILE NAVIGATION */}
-				<ul className='menu w-52 bg-base-100 rounded-box p-2'>
+				<ul className='menu w-52 bg-base-100 rounded-r-lg p-2'>
 					<li>
 						<Link href={'/sportprogramm'}>Sportprogramm</Link>
 					</li>
@@ -106,6 +112,9 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 					<li>
 						<Link href={'/antraege'}>Anträge &amp; Formulare</Link>
 					</li>
+					<Link className='btn btn-primary mt-auto' href={'/kontakt'}>
+						Kontakt
+					</Link>
 				</ul>
 			</div>
 		</div>
