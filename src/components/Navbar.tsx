@@ -1,144 +1,127 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import TVL from '../../public/images/tvl.png';
+import { MdArrowDropDown } from 'react-icons/md';
 
-export default function Navbar() {
+export default function Navbar({ children }: { children: React.ReactNode }) {
 	return (
-		<div className='navbar bg-base-100 border-b-2'>
-			<div className='navbar-start'>
-				<div className='dropdown z-50'>
-					<label tabIndex={0} className='btn btn-ghost lg:hidden'>
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							className='h-5 w-5'
-							fill='none'
-							viewBox='0 0 24 24'
-							stroke='currentColor'
-						>
-							<path
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								strokeWidth='2'
-								d='M4 6h16M4 12h8m-8 6h16'
-							/>
-						</svg>
-					</label>
-					<ul
-						tabIndex={0}
-						className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
-					>
-						<li>
-							<Link href={'/sportprogramm'}>Sportprogramm</Link>
-						</li>
-						<li tabIndex={0}>
-							<a className='justify-between'>
-								Parent
-								<svg
-									className='fill-current'
-									xmlns='http://www.w3.org/2000/svg'
-									width='24'
-									height='24'
-									viewBox='0 0 24 24'
-								>
-									<path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
-								</svg>
-							</a>
-							<ul className='p-2'>
-								<li>
-									<a>Submenu 1</a>
-								</li>
-								<li>
-									<a>Submenu 2</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<Link href={'/antraege'}>Anträge &amp; Formulare</Link>
-						</li>
-						<li tabIndex={0}>
-							<a>
-								Verein
-								<svg
-									className='fill-current'
-									xmlns='http://www.w3.org/2000/svg'
-									width='20'
-									height='20'
-									viewBox='0 0 24 24'
-								>
-									<path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
-								</svg>
-							</a>
-							<ul className='p-2 bg-base-100'>
-								<li>
-									<Link href={'/verein/vorstand'}>Vorstand</Link>
-								</li>
-								<li>
-									<Link href={'/verein/chronik'}>Chronik</Link>
-								</li>
-							</ul>
-						</li>
-					</ul>
+		<div className='drawer'>
+			<input id='my-drawer-3' type='checkbox' className='drawer-toggle' />
+			<div className='drawer-content flex flex-col'>
+				<div className='w-full navbar bg-base-100 border-b-2'>
+					<div className='flex-none lg:hidden'>
+						<label htmlFor='my-drawer-3' className='btn btn-square btn-ghost'>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								fill='none'
+								viewBox='0 0 24 24'
+								className='inline-block w-6 h-6 stroke-current'
+							>
+								<path
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									strokeWidth='2'
+									d='M4 6h16M4 12h16M4 18h16'
+								></path>
+							</svg>
+						</label>
+					</div>
+					<Link href={'/'} className='btn btn-ghost normal-case text-xl'>
+						<Image src={TVL} alt='TVL' width={40} height={40} />{' '}
+						<span className='ml-4'>Startseite</span>
+					</Link>
+					{/* DESKTOP NAVIGATION */}
+					<div className='flex-none hidden lg:block ml-auto w-100'>
+						<ul className='menu menu-horizontal bg-base-100 rounded-box p-2'>
+							<li>
+								<Link href={'/sportprogramm'}>Sportprogramm</Link>
+							</li>
+							<li tabIndex={0}>
+								<span>
+									Veranstaltungen <MdArrowDropDown />
+								</span>
+								<ul className='rounded-box bg-white p-2'>
+									<li>
+										<Link href={'/veranstaltungen/laufspass'}>Laufspass</Link>
+									</li>
+									<li>
+										<Link href={'/veranstaltungen/traillauf'}>Traillauf</Link>
+									</li>
+								</ul>
+							</li>
+							<li tabIndex={0}>
+								<span>
+									Verein <MdArrowDropDown />
+								</span>
+								<ul className='rounded-box bg-white p-2'>
+									<li>
+										<Link href={'/verein/chronik'}>Chronik</Link>
+									</li>
+									<li>
+										<Link href={'/verein/vorstand'}>Vorstand</Link>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<Link href={'/antraege'}>Anträge &amp; Formulare</Link>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<Link href={'/'} className='btn btn-ghost normal-case text-xl'>
-					<Image src={TVL} alt='TVL' width={40} height={40} />
-				</Link>
+				{children}
 			</div>
-			<div className='navbar-center hidden lg:flex'>
-				<ul className='menu menu-horizontal px-1'>
+			<div className='drawer-side'>
+				<label htmlFor='my-drawer-3' className='drawer-overlay'></label>
+				{/* MOBILE NAVIGATION */}
+				<ul className='menu w-52 bg-base-100 rounded-box p-2'>
 					<li>
 						<Link href={'/sportprogramm'}>Sportprogramm</Link>
 					</li>
 					<li tabIndex={0}>
-						<a>
-							Veranstaltungen
-							<svg
-								className='fill-current'
-								xmlns='http://www.w3.org/2000/svg'
-								width='20'
-								height='20'
-								viewBox='0 0 24 24'
-							>
-								<path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
-							</svg>
-						</a>
-						<ul className='p-2 bg-base-100'>
+						<span>
+							Veranstaltungen <MdArrowDropDown />
+						</span>
+						<ul className='rounded-box bg-base-100 p-2'>
 							<li>
 								<Link href={'/veranstaltungen/laufspass'}>Laufspass</Link>
+							</li>
+							<li>
+								<Link href={'/veranstaltungen/traillauf'}>Traillauf</Link>
+							</li>
+						</ul>
+					</li>
+					<li tabIndex={0}>
+						<span>
+							Verein <MdArrowDropDown />
+						</span>
+						<ul className='rounded-box bg-base-100 p-2'>
+							<li>
+								<Link href={'/verein/chronik'}>Chronik</Link>
+							</li>
+							<li>
+								<Link href={'/verein/vorstand'}>Vorstand</Link>
 							</li>
 						</ul>
 					</li>
 					<li>
 						<Link href={'/antraege'}>Anträge &amp; Formulare</Link>
 					</li>
-					<li tabIndex={0}>
-						<a>
-							Verein
-							<svg
-								className='fill-current'
-								xmlns='http://www.w3.org/2000/svg'
-								width='20'
-								height='20'
-								viewBox='0 0 24 24'
-							>
-								<path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' />
-							</svg>
-						</a>
-						<ul className='p-2 bg-base-100'>
-							<li>
-								<Link href={'/verein/vorstand'}>Vorstand</Link>
-							</li>
-							<li>
-								<Link href={'/verein/chronik'}>Chronik</Link>
-							</li>
-						</ul>
-					</li>
 				</ul>
-			</div>
-			<div className='navbar-end'>
-				<Link className='btn btn-primary' href={'/kontakt'}>
-					Kontakt
-				</Link>
 			</div>
 		</div>
 	);
+}
+{
+	/* <Link href={'/'} className='btn btn-ghost normal-case text-xl'>
+					<Image src={TVL} alt='TVL' width={40} height={40} />
+				</Link>
+<Link href={'/sportprogramm'}>Sportprogramm</Link>
+<Link href={'/veranstaltungen/laufspass'}>Laufspass</Link>
+<Link href={'/veranstaltungen/traillauf'}>Traillauf</Link>
+<Link href={'/antraege'}>Anträge &amp; Formulare</Link>
+<Link href={'/verein/chronik'}>Chronik</Link>
+<Link href={'/verein/vorstand'}>Vorstand</Link>
+<Link className='btn btn-primary' href={'/kontakt'}>
+					Kontakt
+				</Link> */
 }

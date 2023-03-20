@@ -8,14 +8,15 @@ export default function Document() {
 		<Html lang='en' data-theme='winter'>
 			<Head />
 			<body>
-				<Navbar />
-				<main className='flex flex-1'>
-					<div className='flex flex-1 flex-col p-4 py-8 bg-base-200'>
-						<Main />
-					</div>
-					<Sidebar />
-				</main>
-				<Footer />
+				<Navbar>
+					<main className='flex flex-1'>
+						<div className='flex flex-1 flex-col p-4 py-8 bg-base-200'>
+							<Main />
+						</div>
+						<Sidebar />
+					</main>
+					<Footer />
+				</Navbar>
 				<NextScript />
 			</body>
 		</Html>
