@@ -112,9 +112,11 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 					<li>
 						<Link href={'/antraege'}>Anträge &amp; Formulare</Link>
 					</li>
-					<Link className='btn btn-primary mt-auto' href={'/kontakt'}>
-						Kontakt
-					</Link>
+					<li className='mt-auto'>
+						<Link className='btn btn-primary ' href={'/kontakt'}>
+							Kontakt
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</div>
