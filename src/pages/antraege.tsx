@@ -1,7 +1,7 @@
 export default function Antraege() {
 	return (
 		<div className='prose text-center mx-auto'>
-			<h1 className='mb-8'>Vereinsmitgliedschaft, Anträge & Anmeldungen</h1>
+			<h1 className='mb-8'>Mitgliedschaft, Anträge & Anmeldungen</h1>
 			<div>
 				<h2>Aufnahmeantrag des TV 1891 Lemberg e.V.</h2>
 				<p>
