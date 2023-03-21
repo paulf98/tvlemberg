@@ -17,7 +17,10 @@ export default function Footer() {
 				<a className='link link-hover'>Links</a> */}
 			</div>
 			<div>
-				<a className='p-4 rounded-full bg-base-100'>
+				<a
+					className='p-4 rounded-full bg-base-100 hover:bg-base-200'
+					href='https://www.facebook.com/tv1891lemberg/?locale=de_DE'
+				>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						width='24'

@@ -28,6 +28,10 @@ export default function Document() {
 			<meta name='msapplication-TileColor' content='#da532c' />
 			<meta name='theme-color' content='#ffffff'></meta>
 			<title>TV Lemberg e. V.</title>
+			<meta
+				name='description'
+				content='Der Turnverein 1891 Lemberg kann auf viele Jahre Vereinsgeschichte zurückblicken. Mit verschiedenen Sportarten und einer großen Gemeinschaft ist der Verein ein wichtiger Bestandteil der Dorfgemeinde Lemberg.'
+			/>
 			<meta name='viewport' content='width=device-width, initial-scale=1' />
 			<Head />
 			<body>
