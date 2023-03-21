@@ -24,7 +24,7 @@ export default function Sidebar() {
 				src={Yogakurs}
 				alt='Yogakurs'
 			/>
-			<h4 className='text-center text-xl font-bold'>Unser Partner</h4>
+			<h2 className='text-center text-xl font-bold'>Unser Partner</h2>
 			<a
 				href={'https://www.dak.de/'}
 				target='_blank'

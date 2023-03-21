@@ -6,7 +6,7 @@ import { MdArrowDropDown } from 'react-icons/md';
 export default function Navbar({ children }: { children: React.ReactNode }) {
 	return (
 		<div className='drawer'>
-			<input id='my-drawer-3' type='checkbox' className='drawer-toggle' />
+			<input id='my-drawer-3' type='checkbox' className='drawer-toggle' aria-label='Toggle button' />
 			<div className='drawer-content flex flex-col'>
 				<div className='w-full navbar bg-base-100 border-b-2'>
 					<div className='flex-none lg:hidden'>

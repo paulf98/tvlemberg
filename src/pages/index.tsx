@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import TVLPlakat from '../../public/images/plakat.jpg';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
@@ -14,6 +13,7 @@ export default function Home() {
 						alt='Veranstaltungsplakat'
 						className='rounded-md object-cover m-0 max-w-xs'
 						sizes='(max-width: 640px) 100vw, 640px'
+						loading='lazy'
 					/>
 					<div className='card-body'>
 						<h2 className='card-title'>Comedy Dinner</h2>
@@ -36,6 +36,7 @@ export default function Home() {
 						src={Vereinscheck}
 						alt='Vereinscheck'
 						className='rounded-md object-cover m-0'
+						loading='lazy'
 					/>
 				</div>
 			</div>
