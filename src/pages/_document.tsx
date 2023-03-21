@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar';
 
 export default function Document() {
 	return (
-		<Html lang='en' data-theme='winter'>
+		<Html lang='en' data-theme='tvltheme'>
 			<link
 				rel='apple-touch-icon'
 				sizes='180x180'
