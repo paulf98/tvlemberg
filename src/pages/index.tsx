@@ -13,6 +13,7 @@ export default function Home() {
 						src={TVLPlakat}
 						alt='Veranstaltungsplakat'
 						className='rounded-md object-cover m-0 max-w-xs'
+						sizes='(max-width: 640px) 100vw, 640px'
 					/>
 					<div className='card-body'>
 						<h2 className='card-title'>Comedy Dinner</h2>
