@@ -13,8 +13,10 @@ export default function Footer() {
 				<Link className='link link-hover' href={'/satzung'}>
 					Satzung
 				</Link>
-				{/* <a className='link link-hover'>Presse & Zeitung</a>
-				<a className='link link-hover'>Links</a> */}
+				{/* <a className='link link-hover'>Presse & Zeitung</a> */}
+				<Link className='link link-hover' href={'/links'}>
+					Weitere Links
+				</Link>
 			</div>
 			<div>
 				<a
