@@ -18,6 +18,10 @@ export default function Home() {
 					<div className='card-body'>
 						<h2 className='card-title'>Comedy Dinner</h2>
 						<p>Am 22.04. in unserer Turnhalle.</p>
+						<p>
+							Das Comedy-Dinner ist ausverkauft. Es gibt eine Warteliste, falls
+							Karten kurzfristig frei werden.
+						</p>
 					</div>
 				</div>
 
