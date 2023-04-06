@@ -35,6 +35,14 @@ export default function Home() {
 							beteiligen uns gerne an dieser Aktion und nehmen ab sofort Eure
 							Schecks entgegen!
 						</p>
+						<a
+							className='btn btn-primary'
+							target={'_blank'}
+							rel='noreferrer'
+							href='https://foerderportal.dosb.de/gutscheinaktion/sportvereinsscheck/'
+						>
+							Zur Aktion
+						</a>
 					</div>
 
 					<Image
