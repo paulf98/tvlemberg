@@ -2,8 +2,15 @@ import Image from 'next/image';
 import TVLPlakat from '../../public/images/plakat.jpg';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+	const [width, setWidth] = useState(0);
+
+	useEffect(() => {
+		setWidth(window.innerWidth);
+	}, []);
+
 	return (
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
@@ -71,6 +78,17 @@ export default function Home() {
 						</a>
 					</div>
 				</div>
+			</div>
+
+			<div className='my-8'>
+				<iframe
+					src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftv1891lemberg&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1078104429767809'
+					height='400'
+					width={width < 640 ? width - 32 : 640}
+					className='mx-auto'
+					allowFullScreen={true}
+					allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'
+				></iframe>
 			</div>
 		</div>
 	);
