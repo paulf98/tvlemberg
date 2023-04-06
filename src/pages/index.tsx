@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import TVLPlakat from '../../public/images/plakat.jpg';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
+import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
 
 export default function Home() {
 	return (
@@ -42,6 +43,33 @@ export default function Home() {
 						className='rounded-md object-cover m-0'
 						loading='lazy'
 					/>
+				</div>
+
+				{/* HEIMAT LIEBEN */}
+				<div className='card lg:card-side bg-base-100 shadow-xl'>
+					<Image
+						src={HeimatLieben}
+						alt='Sparkasse Heimat lieben'
+						className='rounded-md object-cover m-0 max-w-xs'
+						sizes='(max-width: 640px) 100vw, 640px'
+						loading='lazy'
+					/>
+					<div className='card-body'>
+						<h2 className='card-title'>Projekt Heimat lieben</h2>
+						<p>
+							Wir nehmen an dem Projekt Heimat lieben von der Sparkasse
+							Südwestpfalz teil, um die Erneuerung und Reparatur unserer
+							Sportgeräte zu finanzieren.
+						</p>
+						<a
+							className='btn btn-primary'
+							href='https://www.sparkasse-suedwestpfalz.de/de/home/ihre-sparkasse/heimat-lieben.html'
+							target='_blank'
+							rel='noreferrer'
+						>
+							Zur Aktion
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
