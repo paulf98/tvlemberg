@@ -6,7 +6,12 @@ import { MdArrowDropDown } from 'react-icons/md';
 export default function Navbar({ children }: { children: React.ReactNode }) {
 	return (
 		<div className='drawer'>
-			<input id='my-drawer-3' type='checkbox' className='drawer-toggle' aria-label='Toggle button' />
+			<input
+				id='my-drawer-3'
+				type='checkbox'
+				className='drawer-toggle'
+				aria-label='Toggle button'
+			/>
 			<div className='drawer-content flex flex-col'>
 				<div className='w-full navbar bg-base-100 border-b-2'>
 					<div className='flex-none lg:hidden'>
@@ -31,7 +36,7 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 						<span className='ml-4'>Startseite</span>
 					</Link>
 					{/* DESKTOP NAVIGATION */}
-					<div className='flex-none hidden lg:block ml-auto w-100'>
+					<div className='flex-none hidden lg:block ml-auto w-100 '>
 						<ul className='menu menu-horizontal bg-base-100 rounded-box p-2'>
 							<li>
 								<Link href={'/sportprogramm'}>Sportprogramm</Link>
@@ -40,12 +45,15 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 								<span>
 									Veranstaltungen <MdArrowDropDown />
 								</span>
-								<ul className='rounded-box bg-white p-2'>
+								<ul className='rounded-box bg-white p-2 z-50'>
 									<li>
 										<Link href={'/veranstaltungen/laufspass'}>Laufspass</Link>
 									</li>
 									<li>
 										<Link href={'/veranstaltungen/traillauf'}>Traillauf</Link>
+									</li>
+									<li>
+										<Link href={'/veranstaltungen/zeltlager'}>Zeltlager</Link>
 									</li>
 								</ul>
 							</li>
@@ -53,7 +61,7 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 								<span>
 									Verein <MdArrowDropDown />
 								</span>
-								<ul className='rounded-box bg-white p-2'>
+								<ul className='rounded-box bg-white p-2 z-50'>
 									<li>
 										<Link href={'/verein/chronik'}>Chronik</Link>
 									</li>
@@ -93,6 +101,9 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 							</li>
 							<li>
 								<Link href={'/veranstaltungen/traillauf'}>Traillauf</Link>
+							</li>
+							<li>
+								<Link href={'/veranstaltungen/zeltlager'}>Zeltlager</Link>
 							</li>
 						</ul>
 					</li>
