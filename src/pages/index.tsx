@@ -12,7 +12,7 @@ export default function Home() {
 					<Image
 						src={TVLPlakat}
 						alt='Veranstaltungsplakat'
-						className='rounded-md object-cover m-0 max-w-xs'
+						className='rounded-md object-cover m-0 max-w-sm mx-auto'
 						sizes='(max-width: 640px) 100vw, 640px'
 						loading='lazy'
 					/>
@@ -50,7 +50,7 @@ export default function Home() {
 					<Image
 						src={HeimatLieben}
 						alt='Sparkasse Heimat lieben'
-						className='rounded-md object-cover m-0 max-w-xs'
+						className='rounded-md object-cover m-0 max-w-sm mx-auto'
 						sizes='(max-width: 640px) 100vw, 640px'
 						loading='lazy'
 					/>
@@ -76,9 +76,9 @@ export default function Home() {
 			<div className='my-8 text-center'>
 				<h2 className='text-2xl'>Facebook</h2>
 				<iframe
-					src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftv1891lemberg&tabs=timeline&width=350&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1078104429767809'
+					src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftv1891lemberg&tabs=timeline&width=325&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1078104429767809'
 					allowFullScreen={true}
-					width='350'
+					width='325'
 					height='400'
 					className='mx-auto align-center'
 					allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'
