@@ -36,12 +36,18 @@ export default function Zeltlager() {
 				Der Beitrag pro Person beträgt: 90 € für Mitglieder 120 € für
 				Nichtmitglieder (inkl. Versicherung)
 			</p>
-			<a download href='assets/Zeltlager23.pdf' className='btn btn-primary'>
+			<a download href='/assets/Zeltlager23.pdf' className='btn btn-primary'>
 				Download Anmeldeformular
 			</a>
 			<h2>Infoblatt</h2>
-            <p className='text-red-600'>Wichtige Informationen rund ums Zeltlager. Bitte unbedingt beachten!</p>
-			<a download href='assets/Zeltlager23Info.pdf' className='btn btn-primary'>
+			<p className='text-red-600'>
+				Wichtige Informationen rund ums Zeltlager. Bitte unbedingt beachten!
+			</p>
+			<a
+				download
+				href='/assets/Zeltlager23Info.pdf'
+				className='btn btn-primary'
+			>
 				Download Infoblatt
 			</a>
 		</PageWrapper>
