@@ -63,6 +63,9 @@ export default function Laufspass() {
 				alt='Laufspass'
 				className='mx-auto my-4 shadow-md rounded-md border'
 			/>
+			<a download className='btn btn-primary' href='/assets/Laufspass2023.pdf'>
+				Download als PDF
+			</a>
 			<h1 className='my-8'>Ergebnisse der vorherigen Läufe</h1>
 			<div className='overflow-x-auto'>
 				<table className='table w-full'>

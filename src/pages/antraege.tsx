@@ -26,7 +26,7 @@ export default function Antraege() {
 				<h2>Beitragsordnung</h2>
 				<p>
 					Die Beitragsordnung 2014, gemäß Mitgliederversammlung vom 18.09.2013
-					finden Sie nachfolgend als Download.
+					findest du nachfolgend als Download.
 				</p>
 				<a
 					download
@@ -35,9 +35,10 @@ export default function Antraege() {
 				>
 					Download
 				</a>
+				<h2>Mitgliedsbeiträge</h2>
 				<p>
 					Die Mitgliedsbeiträge ab 2023, gemäß Beschluss der
-					Mitgliederversammlung vom 10.11.2021 finden Sie nachfolgend als
+					Mitgliederversammlung vom 10.11.2021, findest du nachfolgend als
 					Download
 				</p>
 				<a
@@ -51,8 +52,8 @@ export default function Antraege() {
 			<div>
 				<h2>Einwilligung Personenbilder</h2>
 				<p>
-					Die Einwilligung in die Veröffentlichung von Personenbildnissen finden
-					Sie nachfolgend als Download.
+					Die Einwilligung in die Veröffentlichung von Personenbildnissen
+					findest du nachfolgend als Download.
 				</p>
 				<a
 					download
