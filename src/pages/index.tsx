@@ -12,7 +12,7 @@ export default function Home() {
 					<Image
 						src={TVLPlakat}
 						alt='Veranstaltungsplakat'
-						className='rounded-md object-cover m-0 max-w-sm mx-auto'
+						className='rounded-md object-cover m-0 max-w-xs md:max-w-sm mx-auto'
 						sizes='(max-width: 640px) 100vw, 640px'
 						loading='lazy'
 					/>
@@ -50,7 +50,7 @@ export default function Home() {
 					<Image
 						src={HeimatLieben}
 						alt='Sparkasse Heimat lieben'
-						className='rounded-md object-cover m-0 max-w-sm mx-auto'
+						className='rounded-md object-cover m-0 max-w-xs md:max-w-sm mx-auto'
 						sizes='(max-width: 640px) 100vw, 640px'
 						loading='lazy'
 					/>
