@@ -66,33 +66,33 @@ const LinksList = [
 
 export default function Links() {
 	return (
-		<div className='overflow-x-auto'>
-			<table className='table w-full'>
-				{/* head */}
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Link</th>
-					</tr>
-				</thead>
-				<tbody>
-					{LinksList.map((link) => (
-						<tr className='hover' key={link.name}>
-							<td>{link.name}</td>
-							<td>
-								<Link
-									href={link.link}
-									target={'_blank'}
-									rel={'noreferrer'}
-									className='hover:underline'
-								>
-									{link.link}
-								</Link>
-							</td>
+		<div className='text-center prose mx-auto'>
+			<h1 className='my-8'>Weitere Links</h1>
+			<div className='overflow-x-auto'>
+				<table className='table w-full'>
+					<thead>
+						<tr>
+							<th>Name</th>
 						</tr>
-					))}
-				</tbody>
-			</table>
+					</thead>
+					<tbody>
+						{LinksList.map((link) => (
+							<tr className='hover' key={link.name}>
+								<td>
+									<Link
+										href={link.link}
+										target={'_blank'}
+										rel={'noreferrer'}
+										className='link link-primary'
+									>
+										{link.name}
+									</Link>
+								</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</div>
 		</div>
 	);
 }
