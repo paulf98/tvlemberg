@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import LaufspassLogo from '../../public/images/LogoLaufspass.png';
 import Yogakurs from '../../public/images/yogakurs.jpg';
+import Zeltlager from '../../public/images/Zeltlager23Plakat.jpg';
 import DAK from '../../public/images/dak.png';
 
 /**
@@ -18,7 +19,12 @@ export default function Sidebar() {
 			>
 				<Image src={LaufspassLogo} alt='Logo Laufspass' />
 			</Link>
-
+			<Link
+				href={'/veranstaltungen/zeltlager'}
+				className='shadow-xl rounded-md hover:bg-base-200'
+			>
+				<Image src={Zeltlager} alt='Zeltlager 2023 Plakat' />
+			</Link>
 			<Image
 				className='shadow-xl rounded-md hover:bg-base-200'
 				src={Yogakurs}

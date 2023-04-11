@@ -1,23 +1,43 @@
+import Image from 'next/image';
 import PageWrapper from '../../components/PageWrapper';
+import ZeltlagerPlakat from '../../../public/images/Zeltlager23Plakat.jpg';
 
 export default function Zeltlager() {
 	return (
 		<PageWrapper>
 			<h1 className='my-8'>Zeltlager 2023</h1>
-			<p>
-				Unser diesjähriges, traditionelles Zeltlager findet in der Zeit von
-				Mittwoch, 07. Juni bis Samstag, 10. Juni 2023 (Fronleichnam) in Lemberg
-				auf dem Turngelände statt.
-			</p>
-			<p className='font-semibold'>
-				Lagerfeuer - Nachtwanderung - Bastelarbeiten - Spiele u. v. m. warten
-				auf Euch.
-			</p>
-			<p>
-				Unternehmungslustige Kinder ab 6 Jahre und Jugendliche mit Freude an
-				Gemeinschaft, Spielen und Abenteuer sollten sich schnellstmöglich
-				anmelden.
-			</p>
+			<div className='flex flex-wrap md:flex-nowrap gap-4 items-center'>
+				<div className='text-justify'>
+					<p>
+						Unser diesjähriges, traditionelles Zeltlager findet in der Zeit von
+						Mittwoch, 07. Juni bis Samstag, 10. Juni 2023 (Fronleichnam) in
+						Lemberg auf dem Turngelände statt.
+					</p>
+					<p className='font-semibold text-center'>
+						Lagerfeuer - Nachtwanderung - Bastelarbeiten - Spiele u. v. m.
+						warten auf Euch.
+					</p>
+					<p>
+						Unternehmungslustige Kinder ab 6 Jahre und Jugendliche mit Freude an
+						Gemeinschaft, Spielen und Abenteuer sollten sich schnellstmöglich
+						anmelden.
+					</p>
+					<div className='text-center'>
+						<a
+							download
+							href='/assets/Zeltlager23Plakat.pdf'
+							className='btn btn-primary'
+						>
+							Download Plakat
+						</a>
+					</div>
+				</div>
+				<Image
+					src={ZeltlagerPlakat}
+					alt='Zeltlager 2023 Plakat'
+					className='shadow-xl rounded-md hover:bg-base-200'
+				/>
+			</div>
 			<h2>Anmeldung</h2>
 			Anmeldungen können bis 31. Mai 2023 abgegeben werden bei:
 			<ul className='text-left'>

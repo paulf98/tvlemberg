@@ -133,17 +133,3 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 		</div>
 	);
 }
-{
-	/* <Link href={'/'} className='btn btn-ghost normal-case text-xl'>
-					<Image src={TVL} alt='TVL' width={40} height={40} />
-				</Link>
-<Link href={'/sportprogramm'}>Sportprogramm</Link>
-<Link href={'/veranstaltungen/laufspass'}>Laufspass</Link>
-<Link href={'/veranstaltungen/traillauf'}>Traillauf</Link>
-<Link href={'/antraege'}>Anträge &amp; Formulare</Link>
-<Link href={'/verein/chronik'}>Chronik</Link>
-<Link href={'/verein/vorstand'}>Vorstand</Link>
-<Link className='btn btn-primary' href={'/kontakt'}>
-					Kontakt
-				</Link> */
-}
