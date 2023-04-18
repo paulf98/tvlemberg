@@ -2,30 +2,45 @@ import Image from 'next/image';
 import TVLPlakat from '../../public/images/plakat.jpg';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
+import TVLTour from '../../public/images/tvl-tour.jpeg';
+import CardVertical from '../components/CardVertical';
 
 export default function Home() {
 	return (
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				<div className='card lg:card-side bg-base-100 shadow-xl'>
-					<Image
-						src={TVLPlakat}
-						alt='Veranstaltungsplakat'
-						className='rounded-md object-cover m-0 max-w-xs md:max-w-sm mx-auto'
-						sizes='(max-width: 640px) 100vw, 640px'
-						loading='lazy'
-					/>
-					<div className='card-body'>
-						<h2 className='card-title'>Comedy Dinner</h2>
-						<p>Am 22.04. in unserer Turnhalle.</p>
-						<p>
-							Das Comedy-Dinner ist ausverkauft. Es gibt eine Warteliste, falls
-							Karten kurzfristig frei werden.
-						</p>
-					</div>
-				</div>
-
+				<CardVertical
+					title='2. TVL Tour'
+					text={
+						<>
+							<p>Der etwas andere Wanderspaß am 01. Mai!</p>
+							<p className='font-bold'>Start von 10 - 11 Uhr am TVL</p>
+							<p>
+								Es erwarten euch Bewegungsaufgaben und Fragen rund um den Wald.
+							</p>
+							<p>
+								Ab 12:00 Uhr gibt es Kartoffelsuppe, Kaffe, Kuchen und vieles
+								mehr.
+							</p>
+						</>
+					}
+					image={TVLTour}
+				/>
+				<CardVertical
+					title='Comedy Dinner'
+					text={
+						<>
+							<p>Am 22.04. in unserer Turnhalle.</p>
+							<p>
+								Das Comedy-Dinner ist ausverkauft. Es gibt eine Warteliste,
+								falls Karten kurzfristig frei werden.
+							</p>
+						</>
+					}
+					image={TVLPlakat}
+				/>
+				
 				<div className='card bg-base-100 shadow-xl w-100'>
 					<div className='card-body'>
 						<h2 className='card-title'>Vereinscheck</h2>
@@ -54,31 +69,12 @@ export default function Home() {
 				</div>
 
 				{/* HEIMAT LIEBEN */}
-				<div className='card lg:card-side bg-base-100 shadow-xl'>
-					<Image
-						src={HeimatLieben}
-						alt='Sparkasse Heimat lieben'
-						className='rounded-md object-cover m-0 max-w-xs md:max-w-sm mx-auto'
-						sizes='(max-width: 640px) 100vw, 640px'
-						loading='lazy'
-					/>
-					<div className='card-body'>
-						<h2 className='card-title'>Projekt Heimat lieben</h2>
-						<p>
-							Wir nehmen an dem Projekt Heimat lieben von der Sparkasse
-							Südwestpfalz teil, um die Erneuerung und Reparatur unserer
-							Sportgeräte zu finanzieren.
-						</p>
-						<a
-							className='btn btn-primary'
-							href='https://www.sparkasse-suedwestpfalz.de/de/home/ihre-sparkasse/heimat-lieben.html'
-							target='_blank'
-							rel='noreferrer'
-						>
-							Zur Aktion
-						</a>
-					</div>
-				</div>
+				<CardVertical
+					title='Projekt Heimat lieben'
+					text='Wir nehmen an dem Projekt Heimat lieben von der Sparkasse Südwestpfalz teil, um die Erneuerung und Reparatur unserer Sportgeräte zu finanzieren.'
+					image={HeimatLieben}
+					link='https://www.sparkasse-suedwestpfalz.de/de/home/ihre-sparkasse/heimat-lieben.html'
+				/>
 			</div>
 
 			<div className='my-8 text-center'>
