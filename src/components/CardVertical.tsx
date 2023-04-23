@@ -26,7 +26,7 @@ export default function CardVertical({
 			/>
 			<div className='card-body'>
 				<h2 className='card-title'>{title}</h2>
-				<p>{text}</p>
+				{text}
 				{link && (
 					<a
 						className='btn btn-primary'

@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import TVLPlakat from '../../public/images/plakat.jpg';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
 import TVLTour from '../../public/images/tvl-tour.jpeg';
@@ -26,19 +25,6 @@ export default function Home() {
 						</>
 					}
 					image={TVLTour}
-				/>
-				<CardVertical
-					title='Comedy Dinner'
-					text={
-						<>
-							<p>Am 22.04. in unserer Turnhalle.</p>
-							<p>
-								Das Comedy-Dinner ist ausverkauft. Es gibt eine Warteliste,
-								falls Karten kurzfristig frei werden.
-							</p>
-						</>
-					}
-					image={TVLPlakat}
 				/>
 				
 				<div className='card bg-base-100 shadow-xl w-100'>
@@ -71,7 +57,11 @@ export default function Home() {
 				{/* HEIMAT LIEBEN */}
 				<CardVertical
 					title='Projekt Heimat lieben'
-					text='Wir nehmen an dem Projekt Heimat lieben von der Sparkasse Südwestpfalz teil, um die Erneuerung und Reparatur unserer Sportgeräte zu finanzieren.'
+					text={
+						<p>
+							Wir nehmen an dem Projekt Heimat lieben von der Sparkasse Südwestpfalz teil, um die Erneuerung und Reparatur unserer Sportgeräte zu finanzieren.
+						</p>	
+					}
 					image={HeimatLieben}
 					link='https://www.sparkasse-suedwestpfalz.de/de/home/ihre-sparkasse/heimat-lieben.html'
 				/>
