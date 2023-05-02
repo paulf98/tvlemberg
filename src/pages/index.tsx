@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
-import TVLTour from '../../public/images/tvl-tour.jpeg';
+import Yoga from '../../public/images/Yoga.jpg';
 import CardVertical from '../components/CardVertical';
 
 export default function Home() {
@@ -10,21 +10,15 @@ export default function Home() {
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
 				<CardVertical
-					title='2. TVL Tour'
+					title='Yoga für Schwangere'
 					text={
 						<>
-							<p>Der etwas andere Wanderspaß am 01. Mai!</p>
-							<p className='font-bold'>Start von 10 - 11 Uhr am TVL</p>
-							<p>
-								Es erwarten euch Bewegungsaufgaben und Fragen rund um den Wald.
-							</p>
-							<p>
-								Ab 12:00 Uhr gibt es Kartoffelsuppe, Kaffe, Kuchen und vieles
-								mehr.
-							</p>
+							<p>Alle Trimester und Yogalevel sind Willkommen!</p>
+							<p className='font-bold'>IMMER MONTAGS 17:15-18:15 UHR</p>
+							<p>Infos und Anmeldung per WhatsApp 017684548496 oder E-Mail an isabellgross.mobile@gmail.com</p>
 						</>
 					}
-					image={TVLTour}
+					image={Yoga}
 				/>
 				
 				<div className='card bg-base-100 shadow-xl w-100'>
