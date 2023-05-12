@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
+import DSA from '../../public/images/DSA.png';
 import CardVertical from '../components/CardVertical';
 
 export default function Home() {
@@ -19,6 +20,18 @@ export default function Home() {
 						</>
 					}
 					image={Yoga}
+				/>
+				<CardVertical
+					title='Sportabzeichen'
+					text={
+						<>
+							<p>Du willst das Sportabzeichen erwerben? Oder willst du dich nur ab und zu in geselliger Runde sportlich betätigen? Dann bist bei uns genau richtig.</p>
+							<p className='font-bold'>Jeden Dienstag um 19 Uhr</p>
+							<p>Das Alter ist egal - ob 18 oder 88 !!! Komm zum Schnuppertraining zur Sportabzeichengruppe des TV Lemberg.</p>
+							<p> <span className='font-bold'>Kontakt: <br /></span> Volker Ringelspacher, Tel.: 06331-40472</p>
+						</>
+					}
+					image={DSA}
 				/>
 				
 				<div className='card bg-base-100 shadow-xl w-100'>

@@ -20,7 +20,7 @@ export default function CardVertical({
 				alt={title}
                 width={image.width}
                 height={image.height}
-				className='rounded-md object-cover m-0 max-w-xs md:max-w-sm mx-auto'
+				className='rounded-md object-contain m-0 max-w-xs md:max-w-sm mx-auto'
 				sizes='(max-width: 640px) 100vw, 640px'
 				loading='lazy'
 			/>
