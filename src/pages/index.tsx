@@ -64,10 +64,10 @@ export default function Home() {
 			<div className='my-8 text-center'>
 				<h2 className='text-2xl'>Facebook</h2>
 				<iframe
-					src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftv1891lemberg&tabs=timeline&width=325&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1078104429767809'
+					src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftv1891lemberg&width=325&height=400&small_header=false&adapt_container_width=true&&appId=1078104429767809'
 					allowFullScreen={true}
 					width='325'
-					height='400'
+					height='175'
 					className='mx-auto align-center'
 					allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'
 				></iframe>
