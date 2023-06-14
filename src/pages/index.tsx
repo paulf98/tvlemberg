@@ -3,26 +3,13 @@ import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
-import ZeltlagerPlakat from '../../public/images/Zeltlager23Plakat.jpg';
 import CardVertical from '../components/CardVertical';
-import Link from 'next/link';
 
 export default function Home() {
 	return (
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-			<CardVertical
-					title='Zeltlager 2023'
-					text={
-						<>
-							<p>Lagerfeuer - Nachtwanderung - Bastelarbeiten - Spiele u. v. m. warten auf Euch - für Kinder und Jugendliche ab 6 Jahren.</p>
-							<p className='font-bold'>Mittwoch, 07. Juni bis Samstag, 10. Juni 2023 (Fronleichnam)</p>
-							<Link  className='btn btn-primary' href='/veranstaltungen/zeltlager'>Zur Infoseite</Link>
-						</>
-					}
-					image={ZeltlagerPlakat}
-				/>
 				<CardVertical
 					title='Yoga für Schwangere'
 					text={

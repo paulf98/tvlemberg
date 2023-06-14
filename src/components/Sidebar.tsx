@@ -1,7 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Yogakurs from '../../public/images/yogakurs.jpg';
-import Zeltlager from '../../public/images/Zeltlager23Plakat.jpg';
 import DAK from '../../public/images/dak.png';
 
 /**
@@ -12,12 +10,6 @@ export default function Sidebar() {
 	return (
 		<aside className='hidden lg:flex flex-col gap-8 w-min-32 max-w-xs min-h-screen p-8'>
 			<h1 className='text-3xl font-bold text-center'>Aktuelles</h1>
-			<Link
-				href={'/veranstaltungen/zeltlager'}
-				className='shadow-xl rounded-md hover:bg-base-200'
-			>
-				<Image src={Zeltlager} alt='Zeltlager 2023 Plakat' />
-			</Link>
 			<Image
 				className='shadow-xl rounded-md hover:bg-base-200'
 				src={Yogakurs}
