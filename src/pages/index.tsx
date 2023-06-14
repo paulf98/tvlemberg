@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
+import Turnfest from '../../public/images/Turnfest2023.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import CardVertical from '../components/CardVertical';
@@ -10,13 +11,29 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+			<CardVertical
+					title='Turnfest 2023'
+					text={
+						<>
+							<p className='font-bold'>Sonntag, 02.07.23 ab 10:00 Uhr</p>
+							<p>
+								Es erwarten euch leckere Speisen und Getränke, sowie musikalische und sportliche Unterhaltung. 
+								Das Spielmobil für Kids darf natürlich auch nicht fehlen.
+							</p>
+						</>
+					}
+					image={Turnfest}
+				/>
 				<CardVertical
 					title='Yoga für Schwangere'
 					text={
 						<>
 							<p>Alle Trimester und Yogalevel sind Willkommen!</p>
 							<p className='font-bold'>IMMER MONTAGS 17:15-18:15 UHR</p>
-							<p>Infos und Anmeldung per WhatsApp 017684548496 oder E-Mail an isabellgross.mobile@gmail.com</p>
+							<p>
+								Infos und Anmeldung per WhatsApp 017684548496 oder E-Mail an
+								isabellgross.mobile@gmail.com
+							</p>
 						</>
 					}
 					image={Yoga}
@@ -25,15 +42,28 @@ export default function Home() {
 					title='Sportabzeichen'
 					text={
 						<>
-							<p>Du willst das Sportabzeichen erwerben? Oder willst du dich nur ab und zu in geselliger Runde sportlich betätigen? Dann bist bei uns genau richtig.</p>
+							<p>
+								Du willst das Sportabzeichen erwerben? Oder willst du dich nur
+								ab und zu in geselliger Runde sportlich betätigen? Dann bist bei
+								uns genau richtig.
+							</p>
 							<p className='font-bold'>Jeden Dienstag um 19 Uhr</p>
-							<p>Das Alter ist egal - ob 18 oder 88 !!! Komm zum Schnuppertraining zur Sportabzeichengruppe des TV Lemberg.</p>
-							<p> <span className='font-bold'>Kontakt: <br /></span> Volker Ringelspacher, Tel.: 06331-40472</p>
+							<p>
+								Das Alter ist egal - ob 18 oder 88 !!! Komm zum
+								Schnuppertraining zur Sportabzeichengruppe des TV Lemberg.
+							</p>
+							<p>
+								{' '}
+								<span className='font-bold'>
+									Kontakt: <br />
+								</span>{' '}
+								Volker Ringelspacher, Tel.: 06331-40472
+							</p>
 						</>
 					}
 					image={DSA}
 				/>
-				
+
 				<div className='card bg-base-100 shadow-xl w-100'>
 					<div className='card-body'>
 						<h2 className='card-title'>Vereinscheck</h2>
@@ -66,8 +96,10 @@ export default function Home() {
 					title='Projekt Heimat lieben'
 					text={
 						<p>
-							Wir nehmen an dem Projekt Heimat lieben von der Sparkasse Südwestpfalz teil, um die Erneuerung und Reparatur unserer Sportgeräte zu finanzieren.
-						</p>	
+							Wir nehmen an dem Projekt Heimat lieben von der Sparkasse
+							Südwestpfalz teil, um die Erneuerung und Reparatur unserer
+							Sportgeräte zu finanzieren.
+						</p>
 					}
 					image={HeimatLieben}
 					link='https://www.sparkasse-suedwestpfalz.de/de/home/ihre-sparkasse/heimat-lieben.html'
