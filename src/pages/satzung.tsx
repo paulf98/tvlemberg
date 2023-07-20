@@ -3,8 +3,8 @@ export default function Satzung() {
 		<div className='prose mx-auto'>
 			<h1>Satzung und Ordnungen des TVL:</h1>
 			<div className='flex flex-col gap-8'>
-				<a download className='btn btn-primary' href='/assets/Satzung2016.pdf'>
-					Download Satzung 2016
+				<a download className='btn btn-primary' href='/assets/Satzung.pdf'>
+					Download Satzung 2021
 				</a>
 				<a
 					download
