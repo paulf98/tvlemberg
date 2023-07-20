@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
-import Turnfest from '../../public/images/Turnfest2023.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import CardVertical from '../components/CardVertical';
@@ -11,19 +10,6 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-			<CardVertical
-					title='Turnfest 2023'
-					text={
-						<>
-							<p className='font-bold'>Sonntag, 02.07.23 ab 10:00 Uhr</p>
-							<p>
-								Es erwarten euch leckere Speisen und Getränke, sowie musikalische und sportliche Unterhaltung. 
-								Das Spielmobil für Kids darf natürlich auch nicht fehlen.
-							</p>
-						</>
-					}
-					image={Turnfest}
-				/>
 				<CardVertical
 					title='Yoga für Schwangere'
 					text={
