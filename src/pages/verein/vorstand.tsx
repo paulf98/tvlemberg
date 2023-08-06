@@ -2,7 +2,7 @@ export default function Vorstand() {
 	return (
 		<div className='prose mx-auto'>
 			<h1>Unsere Vorstandschaft</h1>
-			<p className='text-gray-700 italic text-sm'>Stand: Nov. 2021</p>
+			<p className='text-gray-700 italic text-sm'>Stand: Juli 2023</p>
 			<h2> Vorsitzende:</h2>
 			<ul>
 				<li>Bernd Köhler (Öffentlichkeitsarbeit)</li>
@@ -16,7 +16,7 @@ export default function Vorstand() {
 			<h2>Mitgliedschaft- und Beitragsverwaltung:</h2>
 			<p>Elena Göller</p>
 			<h2>Protokollführung:</h2>
-			<p>Madeleine Berger</p>
+			<p>Jutta Ernst</p>
 			<h2>Beisitzer:</h2>
 			<ul>
 				<li>Herbert Salzmann</li>
@@ -29,10 +29,12 @@ export default function Vorstand() {
 			<p>Marion Becker</p>
 			<h2>Leiter Bauausschuss:</h2>
 			<p>Jörg Becker</p>
-			<h2>Jugendausschuss:</h2>
-			<p>Svenja Neef</p>
+			<h2>Leiter Instandhaltungsausschuss:</h2>
+			<p>Michael Stucky</p>
+			<h2>Leiterin Jugendausschuss:</h2>
+			<p>Anna-Lena Resch</p>
 			<h2>Kassenprüfer:</h2>
-			<p>Heidi Koch &nbsp; Heinrich Zimmermann</p>
+			<p>Heidi Koch &nbsp; Matthias Kobert</p>
 		</div>
 	);
 }
