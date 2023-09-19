@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Yogakurs from '../../public/images/yogakurs.jpg';
+import Kerwe from '../../public/images/Kerweplakat2023-DINA3.png';
 import DAK from '../../public/images/dak.png';
 
 /**
@@ -12,6 +13,11 @@ export default function Sidebar() {
 			<h1 className='text-3xl font-bold text-center'>Aktuelles</h1>
 			<Image
 				className='shadow-xl rounded-md hover:bg-base-200'
+				src={Kerwe}
+				alt='Plakat Kerweparty 2023'
+			/>
+			<Image
+				className='shadow-xl rounded-md hover:bg-base-200'
 				src={Yogakurs}
 				alt='Yogakurs'
 			/>
@@ -19,8 +25,7 @@ export default function Sidebar() {
 			<a
 				href={'https://www.dak.de/'}
 				target='_blank'
-				className='hover:bg-base-200'
-			>
+				className='hover:bg-base-200'>
 				<Image src={DAK} alt='DAK' />
 			</a>
 		</aside>
