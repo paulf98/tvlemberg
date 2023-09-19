@@ -3,6 +3,7 @@ import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
 import ZehfuesslerHeader from '../../public/images/zehfuessler-header.png';
 import ZehfuesslerLauf from '../../public/images/zehfuessler-lauf.jpg';
+import Kerwe from '../../public/images/Kerweplakat2023-DINA3.png';
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import CardVertical from '../components/CardVertical';
@@ -37,6 +38,23 @@ export default function Home() {
 						className='rounded-md shadow-md'
 					/>
 				</div>
+
+				<CardVertical
+					title='Kerweparty 2023'
+					text={
+						<>
+							<p>
+								Die Kerweparty 2023 findet am 21. Oktober 2023 ab 18 Uhr in der
+								Freizeithalle statt.
+							</p>
+							<p>Weitere Informationen gibt es im Facebook-Event.</p>
+						</>
+					}
+					image={Kerwe}
+					link='https://fb.me/e/17HoIDf3J'
+					linkText='Zum Facebook-Event'
+				/>
+
 				<CardVertical
 					title='Yoga für Schwangere'
 					text={
