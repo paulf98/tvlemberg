@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Yogakurs from '../../public/images/yogakurs.jpg';
-import Kerwe from '../../public/images/Kerweplakat2023-DINA3.png';
 import DAK from '../../public/images/dak.png';
 
 /**
@@ -11,11 +10,6 @@ export default function Sidebar() {
 	return (
 		<aside className='hidden lg:flex flex-col gap-8 w-min-32 max-w-xs min-h-screen p-8'>
 			<h1 className='text-3xl font-bold text-center'>Aktuelles</h1>
-			<Image
-				className='shadow-xl rounded-md hover:bg-base-200'
-				src={Kerwe}
-				alt='Plakat Kerweparty 2023'
-			/>
 			<Image
 				className='shadow-xl rounded-md hover:bg-base-200'
 				src={Yogakurs}
