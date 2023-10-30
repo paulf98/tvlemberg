@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Yogakurs from '../../public/images/yogakurs.jpg';
 import DAK from '../../public/images/dak.png';
+import Termine from '../../public/images/Termine24.jpg';
 
 /**
  * Sidebar component that shows news
@@ -10,6 +11,13 @@ export default function Sidebar() {
 	return (
 		<aside className='hidden lg:flex flex-col gap-8 w-min-32 max-w-xs min-h-screen p-8'>
 			<h1 className='text-3xl font-bold text-center'>Aktuelles</h1>
+			<a href={Termine.src} target='_blank' className='hover:bg-base-200'>
+				<Image
+					className='shadow-xl rounded-md hover:bg-base-200'
+					src={Termine}
+					alt='Termine 2024'
+				/>
+			</a>
 			<Image
 				className='shadow-xl rounded-md hover:bg-base-200'
 				src={Yogakurs}
