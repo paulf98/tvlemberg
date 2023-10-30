@@ -1,43 +1,15 @@
 import Image from 'next/image';
 import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
-import ZehfuesslerHeader from '../../public/images/zehfuessler-header.png';
-import ZehfuesslerLauf from '../../public/images/zehfuessler-lauf.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import CardVertical from '../components/CardVertical';
-import Link from 'next/link';
 
 export default function Home() {
 	return (
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				<div className='text-center mb-8'>
-					<Image src={ZehfuesslerHeader} alt='Banner Zehfuessler' />
-					<h2>Herzlich Willkommen beim 3. Zehfüssler - Traillauf</h2>
-					<p>Sonntag, 24. September 2023</p>
-					<div className='flex flex-wrap justify-center gap-8'>
-						<a
-							href='http://my.raceresult.com/256126/registration'
-							className='btn btn-primary'
-							target='_blank'>
-							Zur Anmeldung bei Raceresult
-						</a>
-						<Link
-							href='/veranstaltungen/traillauf'
-							className='btn btn-outline btn-primary'>
-							Weitere Informationen
-						</Link>
-					</div>
-
-					<Image
-						src={ZehfuesslerLauf}
-						alt='Teilnehmer beim Zehfuessler-Trail'
-						className='rounded-md shadow-md'
-					/>
-				</div>
-
 				<CardVertical
 					title='Yoga für Schwangere'
 					text={
