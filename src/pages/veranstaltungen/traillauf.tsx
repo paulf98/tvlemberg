@@ -1,8 +1,13 @@
 import Image from 'next/image';
-import Trailstrecke from '../../../public/images/trailstrecke.png';
-import ZehfuesslerHeader from '../../../public/images/zehfuessler-header.png';
+// import Trailstrecke from '../../../public/images/trailstrecke.png';
+// import ZehfuesslerHeader from '../../../public/images/zehfuessler-header.png';
+import Zehfuessler23 from '../../../public/images/zehfuessler23.jpeg';
 
 const PastResults = [
+	{
+		year: 2023,
+		link: 'https://my.raceresult.com/256126/results',
+	},
 	{
 		year: 2022,
 		link: 'https://my.raceresult.com/209846/',
@@ -18,17 +23,16 @@ export default function Traillauf() {
 		<div className='text-center prose mx-auto'>
 			<h1>Willkommen beim Zehfüssler Traillauf!</h1>
 			<p>
-				Die ersten Vorbereitungen zum 3. Zehfüssler Traillauf sind getroffen.
-				Der Turnverein Lemberg würde Dich gerne am 24. September begrüßen und
-				wünscht Dir schon heute eine erfolgreiche Teilnahme.
+				Der Turnverein Lemberg veranstaltete am 24. September 2023 seinen
+				dritten Zehfüssler Traillauf und bedankt sich ganz herzlich beim allen
+				Läuferinnen und Läufer für ihre Teilnahme.
 			</p>
-			<a
-				href='http://my.raceresult.com/256126/registration'
-				className='btn btn-primary'
-				target='_blank'>
-				Zur Anmeldung bei Raceresult
-			</a>
-			<hr />
+			<Image
+				src={Zehfuessler23}
+				alt='Start des Zehfüssler Trails 2023'
+				className='rounded-md shadow-md'
+			/>
+			{/* <hr />
 			<Image src={ZehfuesslerHeader} alt='Banner Zehfuessler' />
 			<p>
 				Über herrliche Pfade, vorbei an bizarren Sandsteinfelsen verläuft der
@@ -145,6 +149,7 @@ export default function Traillauf() {
 				download>
 				Veranstaltungsinfos als PDF
 			</a>
+			*/}
 			<h1 className='my-8'>Ergebnisse der vorherigen Läufe</h1>
 			<div className='overflow-x-auto'>
 				<table className='table w-full'>
