@@ -10,6 +10,30 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				{/* HEIMAT LIEBEN */}
+				<div className='flex flex-col items-center justify-center gap-2'>
+					<h2 className='mt-0'>Endspurt - Heimat Lieben</h2>
+					<p className='text-center'>
+						Der Turnverein Lemberg hat auch 2023 an der Aktion „Heimat lieben“
+						der Sparkasse Südwestpfalz teilgenommen und bedankt sich bei allen
+						Unterstützer. Für den Turnverein kann noch bis 30. November
+						gepunktet werden. Derzeit ist 96% unser Projekts „Reparatur und
+						Erneuerung der Sportgeräte“ in der Kategorie Sport gefördert.
+					</p>
+					<CardVertical
+						title='Projekt Heimat lieben'
+						text={
+							<p>
+								Wir nehmen an dem Projekt Heimat lieben von der Sparkasse
+								Südwestpfalz teil, um die Erneuerung und Reparatur unserer
+								Sportgeräte zu finanzieren.
+							</p>
+						}
+						image={HeimatLieben}
+						link='https://www.sparkasse-suedwestpfalz.de/de/home/ihre-sparkasse/heimat-lieben.html'
+					/>
+				</div>
+
 				<CardVertical
 					title='Yoga für Schwangere'
 					text={
@@ -74,20 +98,6 @@ export default function Home() {
 						loading='lazy'
 					/>
 				</div>
-
-				{/* HEIMAT LIEBEN */}
-				<CardVertical
-					title='Projekt Heimat lieben'
-					text={
-						<p>
-							Wir nehmen an dem Projekt Heimat lieben von der Sparkasse
-							Südwestpfalz teil, um die Erneuerung und Reparatur unserer
-							Sportgeräte zu finanzieren.
-						</p>
-					}
-					image={HeimatLieben}
-					link='https://www.sparkasse-suedwestpfalz.de/de/home/ihre-sparkasse/heimat-lieben.html'
-				/>
 			</div>
 
 			<div className='my-8 text-center'>
