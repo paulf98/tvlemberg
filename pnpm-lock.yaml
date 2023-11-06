@@ -15,8 +15,8 @@ dependencies:
     specifier: 18.0.11
     version: 18.0.11
   '@vercel/analytics':
-    specifier: ^0.1.11
-    version: 0.1.11(react@18.2.0)
+    specifier: ^1.1.1
+    version: 1.1.1
   daisyui:
     specifier: ^2.51.4
     version: 2.51.4(autoprefixer@10.4.14)(postcss@8.4.31)
@@ -393,12 +393,10 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: false
 
-  /@vercel/analytics@0.1.11(react@18.2.0):
-    resolution: {integrity: sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw==}
-    peerDependencies:
-      react: ^16.8||^17||^18
+  /@vercel/analytics@1.1.1:
+    resolution: {integrity: sha512-+NqgNmSabg3IFfxYhrWCfB/H+RCUOCR5ExRudNG2+pcRehq628DJB5e1u1xqwpLtn4pAYii4D98w7kofORAGQA==}
     dependencies:
-      react: 18.2.0
+      server-only: 0.0.1
     dev: false
 
   /acorn-jsx@5.3.2(acorn@8.8.2):
@@ -2213,6 +2211,10 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
   /shebang-command@2.0.0:
