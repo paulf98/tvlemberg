@@ -4,6 +4,7 @@ import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
 import ProVita from '../../public/images/provita.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
+import Theater from '../../public/images/theater.jpg';
 import CardVertical from '../components/CardVertical';
 
 export default function Home() {
@@ -20,12 +21,33 @@ export default function Home() {
 						className='rounded-md object-contain m-0 w-full max-w-md mx-auto'
 					/>
 				</div>
+				{/* THEATER */}
+				<CardVertical
+					title='Theater beim TVL'
+					text={
+						<div>
+							<h4>Onkel Hubbi wird&apos;s schon richten</h4>
+							<p>
+								15.03, 16.03, 22.03 und 23.03.20424 in der Karl-Stucky Halle
+							</p>
+							<p>
+								<span className="font-bold">Eintritt 10€</span> <br />
+								 Vorverkauf im Cafe Faass (Hauptstr. 31, Lemberg) oder <br />
+								 telefonisch bei Michaela Gebhard unter 0173 35 60 33 7
+							</p>
+						</div>
+					}
+					image={Theater}
+				/>
+
 				{/* HEIMAT LIEBEN */}
 				<div className='flex flex-col items-center justify-center gap-2'>
 					<h2 className='mt-0'>Geschafft - Heimat Lieben </h2>
 					<p className='text-center'>
 						Der Turnverein Lemberg hat auch 2023 an der Aktion „Heimat lieben“
-						der Sparkasse Südwestpfalz teilgenommen. Das Ziel wurde erreicht und wir können uns über den Zuschuss für unsere Sportgeräte freuen. <br />
+						der Sparkasse Südwestpfalz teilgenommen. Das Ziel wurde erreicht und
+						wir können uns über den Zuschuss für unsere Sportgeräte freuen.{' '}
+						<br />
 						<br />
 						Wir bedanken uns bei allen Unterstützern!
 					</p>
