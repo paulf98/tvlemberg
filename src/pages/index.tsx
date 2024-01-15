@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Vereinscheck from '../../public/images/vereinscheck.jpg';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
 import ProVita from '../../public/images/provita.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
@@ -102,32 +101,6 @@ export default function Home() {
 					}
 					image={DSA}
 				/>
-
-				<div className='card bg-base-100 shadow-xl w-100'>
-					<div className='card-body'>
-						<h2 className='card-title'>Vereinscheck</h2>
-						<p>
-							Seit dem 24. Januar stellt der DOSB im Auftrag der Bundesregierung
-							bundesweit 150.000 Sportvereinsschecks á 40€ zur Verfügung. Wir
-							beteiligen uns gerne an dieser Aktion und nehmen ab sofort Eure
-							Schecks entgegen!
-						</p>
-						<a
-							className='btn btn-primary'
-							target={'_blank'}
-							rel='noreferrer'
-							href='https://foerderportal.dosb.de/gutscheinaktion/sportvereinsscheck/'>
-							Zur Aktion
-						</a>
-					</div>
-
-					<Image
-						src={Vereinscheck}
-						alt='Vereinscheck'
-						className='rounded-md object-cover m-0'
-						loading='lazy'
-					/>
-				</div>
 			</div>
 
 			<div className='my-8 text-center'>
