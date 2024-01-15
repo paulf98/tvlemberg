@@ -50,6 +50,19 @@ export default function Antraege() {
 				</a>
 			</div>
 			<div>
+				<h2>Änderungsmedlung Mitgliedschaft</h2>
+				<p>
+					Wenn sich Ihre Mitgliedsdaten geändert haben, können Sie nachfolgend das Formular zur Änderung der Daten herunterladen.
+				</p>
+				<a
+					download
+					className='btn btn-primary'
+					href='/assets/Aenderungsmeldung.pdf'
+				>
+					Download
+				</a>
+			</div>
+			<div>
 				<h2>Einwilligung Personenbilder</h2>
 				<p>
 					Die Einwilligung in die Veröffentlichung von Personenbildnissen
