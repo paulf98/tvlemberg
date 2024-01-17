@@ -50,7 +50,7 @@ export default function Antraege() {
 				</a>
 			</div>
 			<div>
-				<h2>Änderungsmedlung Mitgliedschaft</h2>
+				<h2>Änderungsmeldung Mitgliedschaft</h2>
 				<p>
 					Wenn sich Ihre Mitgliedsdaten geändert haben, können Sie nachfolgend das Formular zur Änderung der Daten herunterladen.
 				</p>
