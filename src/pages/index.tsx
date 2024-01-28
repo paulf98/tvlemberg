@@ -3,6 +3,7 @@ import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import Theater from '../../public/images/theater.jpg';
 import Fasching from '../../public/images/fasching24.jpg';
+import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
 import CardVertical from '../components/CardVertical';
 
 export default function Home() {
@@ -39,6 +40,24 @@ export default function Home() {
 						</div>
 					}
 					image={Theater}
+				/>
+				<CardVertical
+					title='Übungsleiter/in gesucht'
+					text={
+						<div>
+							
+							<ul>
+								<li>
+									Kinderturnen
+								</li>
+								<li>Kinder-Leichtathletik</li>
+								<li>Geräteturnen weichlich</li>
+								<li>etc</li>
+							</ul>
+							<p>Bei Interesse unter 0176 400 49 590 melden!</p>
+						</div>
+					}
+					image={TrainerGesucht}
 				/>
 
 				{/* HEIMAT LIEBEN */}
