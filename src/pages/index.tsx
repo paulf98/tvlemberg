@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
-import ProVita from '../../public/images/provita.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import Theater from '../../public/images/theater.jpg';
@@ -11,15 +9,6 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				<div>
-					<Image
-						alt='ProVita'
-						src={ProVita.src}
-						width={ProVita.width}
-						height={ProVita.height}
-						className='rounded-md object-contain m-0 w-full max-w-md mx-auto'
-					/>
-				</div>
 				{/* THEATER */}
 				<CardVertical
 					title='Theater beim TVL'
