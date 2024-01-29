@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Yogakurs from '../../public/images/yogakurs.jpg';
 import DAK from '../../public/images/dak.png';
+import Theyson from '../../public/images/logo_theysohn.svg';
 import Termine from '../../public/images/Termine24.jpg';
 
 /**
@@ -23,12 +24,18 @@ export default function Sidebar() {
 				src={Yogakurs}
 				alt='Yogakurs'
 			/>
-			<h2 className='text-center text-xl font-bold'>Unser Partner</h2>
+			<h2 className='text-center text-xl font-bold'>Unsere Partner</h2>
 			<a
 				href={'https://www.dak.de/'}
 				target='_blank'
 				className='hover:bg-base-200'>
 				<Image src={DAK} alt='DAK' />
+			</a>
+			<a
+				href={'https://www.daniel-theysohn-stiftung.de/'}
+				target='_blank'
+				className='hover:bg-base-200'>
+				<Image src={Theyson} alt='Daniel Theyson Stiftung' />
 			</a>
 		</aside>
 	);
