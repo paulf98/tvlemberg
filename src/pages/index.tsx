@@ -2,7 +2,6 @@ import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import Theater from '../../public/images/theater.jpg';
-import Fasching from '../../public/images/fasching24.jpg';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
 import CardVertical from '../components/CardVertical';
 
@@ -11,18 +10,6 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-			<CardVertical
-					title='Fasching beim TVL'
-					text={
-						<div>
-							<h4>Vermoddelte Turnstunde & Kinderfasching</h4>
-							<p>
-								02.02 und 04.02.2024 in der Karl-Stucky Halle
-							</p>
-						</div>
-					}
-					image={Fasching}
-				/>
 				{/* THEATER */}
 				<CardVertical
 					title='Theater beim TVL'
