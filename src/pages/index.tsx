@@ -38,7 +38,7 @@ export default function Home() {
 									Kinderturnen
 								</li>
 								<li>Kinder-Leichtathletik</li>
-								<li>Geräteturnen weichlich</li>
+								<li>Geräteturnen weiblich</li>
 								<li>etc</li>
 							</ul>
 							<p>Bei Interesse unter 0176 400 49 590 melden!</p>
