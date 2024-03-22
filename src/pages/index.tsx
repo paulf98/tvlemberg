@@ -1,42 +1,58 @@
-import HeimatLieben from '../../public/images/heimat-lieben-sparkasse.jpg';
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
-import Theater from '../../public/images/theater.jpg';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
+import Trainerausbildung from '../../public/images/trainerausbildung.jpg';
+import Sppuelmaschine from '../../public/images/spuelmaschine.jpg';
 import CardVertical from '../components/CardVertical';
+import Card from '../components/Card';
 
 export default function Home() {
 	return (
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				{/* THEATER */}
-				<CardVertical
-					title='Theater beim TVL'
-					text={
-						<div>
-							<h4>Onkel Hubbi wird&apos;s schon richten</h4>
-							<p>
-								15.03, 16.03, 22.03 und 23.03.2024 in der Karl-Stucky Halle
-							</p>
-							<p>
-								<span className="font-bold">Eintritt 10€</span> <br />
-								 Vorverkauf im Cafe Faass (Hauptstr. 31, Lemberg) oder <br />
-								 telefonisch bei Michaela Gebhard unter 0173 35 60 33 7
-							</p>
-						</div>
-					}
-					image={Theater}
-				/>
+				<div>
+					<h2 className='text-center'>Heimat lieben 2024</h2>
+					<p className='text-center'>
+						Aktuell haben wir für zwei Projekte bei der Heimat lieben Aktion der
+						Sparkasse Südwestpfalz um Hilfe gebeten.
+					</p>
+					<div className='flex flex-col items-center md:items-start md:flex-row gap-8 py-8'>
+						<Card
+							title='Jugend - Unterstützung der Trainerausbildung'
+							text={
+								<p>
+									Ein fachlich lizenzierter Übungsleiter ermöglicht ein
+									sportart-spezifisches und leistungsorientiertes Training. Um
+									die Qualifizierung für unsere Übungsleiter zu zahlen,
+									benötigen wir Eure Unterstützung.
+								</p>
+							}
+							image={Trainerausbildung}
+							link='https://www.heimat-lieben.de/project/unterstuetzung-der-trainerausbildung/'
+							linkText='Zur Aktion'
+						/>
+						<Card
+							title='Neue Gastro-Spülmaschine'
+							text={
+								<p>
+									Unsere Gastro-Spülmaschine ist in die Jahre gekommen und soll
+									repariert werden, da wir sie brauchen, um eine Vielzahl von
+									Events zu veranstalten.
+								</p>
+							}
+							image={Sppuelmaschine}
+							link='https://www.heimat-lieben.de/project/neue-spuelmaschine/'
+							linkText='Zur Aktion'
+						/>
+					</div>
+				</div>
 				<CardVertical
 					title='Übungsleiter/in gesucht'
 					text={
 						<div>
-							
 							<ul>
-								<li>
-									Kinderturnen
-								</li>
+								<li>Kinderturnen</li>
 								<li>Kinder-Leichtathletik</li>
 								<li>Geräteturnen weiblich</li>
 								<li>etc</li>
@@ -46,30 +62,6 @@ export default function Home() {
 					}
 					image={TrainerGesucht}
 				/>
-
-				{/* HEIMAT LIEBEN */}
-				<div className='flex flex-col items-center justify-center gap-2'>
-					<h2 className='mt-0'>Geschafft - Heimat Lieben </h2>
-					<p className='text-center'>
-						Der Turnverein Lemberg hat auch 2023 an der Aktion „Heimat lieben“
-						der Sparkasse Südwestpfalz teilgenommen. Das Ziel wurde erreicht und
-						wir können uns über den Zuschuss für unsere Sportgeräte freuen.{' '}
-						<br />
-						<br />
-						Wir bedanken uns bei allen Unterstützern!
-					</p>
-					<CardVertical
-						title='Projekt Heimat lieben'
-						text={
-							<p>
-								Wir nahmen an dem Projekt Heimat lieben von der Sparkasse
-								Südwestpfalz teil, um die Erneuerung und Reparatur unserer
-								Sportgeräte zu finanzieren.
-							</p>
-						}
-						image={HeimatLieben}
-					/>
-				</div>
 
 				<CardVertical
 					title='Yoga für Schwangere'
