@@ -4,6 +4,10 @@ import Laufspass2 from '../../../public/images/Laufspass2.jpg';
 
 const PastResults = [
 	{
+		year: 2023,
+		link: 'https://my.raceresult.com/236854/results',
+	},
+	{
 		year: 2020,
 		link: 'https://my.raceresult.com/149621/results?lang=de',
 	},
@@ -42,15 +46,19 @@ export default function Laufspass() {
 		<div className='text-center prose mx-auto'>
 			<h1 className='mb-8'>Wilkommen beim Lemberger Laufspass!</h1>
 			<p>
-				Nach einer zweijährigen Zwangspause laufen die Vorbereitungen zum 9.
-				Lemberger Laufspass. Der TV Lemberg würde Dich gerne am 01.05. begrüßen
-				und wünscht Dir eine erfolgreiche Teilnahme.
+				Der 10. Lemberger Laufspass findet in seinem Jubiläumsjahr erstmals im
+				Rahmen der WasgauCup-Laufserie statt und bildet dort den diesjährigen
+				Auftakt. Der TV Lemberg würde Dich gerne am 01.05.2024 begrüßen und
+				wünscht Dir eine erfolgreiche Teilnahme. Zur gezielten Vorbereitung
+				bietet der Turnverein Lemberg zwei Trainingsläufe unter der Leitung von
+				Volker Ringelspacher an. Donnerstag, 04. April um 18 Uhr Sonntag, 14.
+				April um 10 Uhr Treffpunkt ist jeweils der Parkplatz unterhalb der
+				Burgruine Lemberg.
 			</p>
 			<a
-				href={'http://my.raceresult.com/236854/'}
+				href={'https://my.raceresult.com/281995/info'}
 				target='_blank'
-				className='btn btn-primary mb-8'
-			>
+				className='btn btn-primary mb-8'>
 				Zur Anmeldung bei Raceresult
 			</a>
 			<Image
@@ -63,7 +71,7 @@ export default function Laufspass() {
 				alt='Laufspass'
 				className='mx-auto my-4 shadow-md rounded-md border'
 			/>
-			<a download className='btn btn-primary' href='/assets/Laufspass2023.pdf'>
+			<a download className='btn btn-primary' href='/assets/Laufspass2024.pdf'>
 				Download als PDF
 			</a>
 			<h1 className='my-8'>Ergebnisse der vorherigen Läufe</h1>
@@ -84,8 +92,7 @@ export default function Laufspass() {
 									<a
 										className='link link-primary'
 										href={result.link}
-										target={'_blank'}
-									>
+										target={'_blank'}>
 										Zu RaceResult
 									</a>
 								</td>
