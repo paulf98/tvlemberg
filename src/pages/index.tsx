@@ -1,6 +1,7 @@
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
+import Comedy from '../../public/images/comedy.jpg';
 import Trainerausbildung from '../../public/images/trainerausbildung.jpg';
 import Sppuelmaschine from '../../public/images/spuelmaschine.jpg';
 import CardVertical from '../components/CardVertical';
@@ -47,6 +48,23 @@ export default function Home() {
 						/>
 					</div>
 				</div>
+
+				<CardVertical
+					title='Comedy Dinner'
+					text={
+						<div>
+							<p className='font-bold'>
+								Am 27.04.24 ab 19:30 Uhr (Einlass 17:30 Uhr)
+							</p>
+							<p>
+								Vorverkauf Di + Do 18-20 Uhr in unserer Turnhalle
+								Fischweiherstraße 29, oder Tel. Marion Becker 0175 / 3834517
+							</p>
+						</div>
+					}
+					image={Comedy}
+				/>
+
 				<CardVertical
 					title='Übungsleiter/in gesucht'
 					text={
