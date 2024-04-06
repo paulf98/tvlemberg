@@ -2,6 +2,7 @@ import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
 import Comedy from '../../public/images/comedy.jpg';
+import TVLTour from '../../public/images/3tvl-tour.jpg';
 import Trainerausbildung from '../../public/images/trainerausbildung.jpg';
 import Sppuelmaschine from '../../public/images/spuelmaschine.jpg';
 import CardVertical from '../components/CardVertical';
@@ -63,6 +64,21 @@ export default function Home() {
 						</div>
 					}
 					image={Comedy}
+				/>
+
+				<CardVertical
+					title='3. TVL Tour'
+					text={
+						<div>
+							<p className='font-bold'>Am 01.05 von 10:00 bis 11:00 Uhr</p>
+							<p>
+								Start an der Turnhalle. Strecke ist Kinderwagentauglich. Nach
+								der Tour erwartet euch das Spielmobil sowie Kartoffelsuppe,
+								Kaffee & Kuchen und vieles mehr.
+							</p>
+						</div>
+					}
+					image={TVLTour}
 				/>
 
 				<CardVertical
