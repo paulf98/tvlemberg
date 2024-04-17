@@ -5,8 +5,10 @@ import Comedy from '../../public/images/comedy.jpg';
 import TVLTour from '../../public/images/3tvl-tour.jpg';
 import Trainerausbildung from '../../public/images/trainerausbildung.jpg';
 import Sppuelmaschine from '../../public/images/spuelmaschine.jpg';
+import ZeltlagerPlakat from '../../public/images/ZeltlagerPlakat.jpg';
 import CardVertical from '../components/CardVertical';
 import Card from '../components/Card';
+import Zeltlager from './veranstaltungen/zeltlager';
 
 export default function Home() {
 	return (
@@ -49,6 +51,22 @@ export default function Home() {
 						/>
 					</div>
 				</div>
+
+				<CardVertical
+					title='Zeltlager 2024'
+					text={
+						<div>
+							<p className='font-bold'>
+								Von 29.05.24 01.06.24 auf dem Turngelände in Lemberg
+							</p>
+							<p>
+								Lagerfeuer - Nachtwanderung - Bastelarbeiten - Spiele u. v. m.
+								warten auf Euch.
+							</p>
+						</div>
+					}
+					image={ZeltlagerPlakat}
+				/>
 
 				<CardVertical
 					title='Comedy Dinner'
