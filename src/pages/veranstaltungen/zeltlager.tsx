@@ -1,17 +1,21 @@
 import Image from 'next/image';
 import PageWrapper from '../../components/PageWrapper';
-import ZeltlagerPlakat from '../../../public/images/Zeltlager23Plakat.jpg';
+import ZeltlagerPlakat from '../../../public/images/ZeltlagerPlakat.jpg';
 
 export default function Zeltlager() {
 	return (
 		<PageWrapper>
-			<h1 className='my-8'>Zeltlager 2023</h1>
-			<div className='flex flex-wrap md:flex-nowrap gap-4 items-center'>
-				<div className='text-justify'>
+			<h1 className='my-8'>Zeltlager 2024</h1>
+			<div className='flex flex-col flex-wrap md:flex-nowrap gap-4 items-center'>
+				<Image
+					src={ZeltlagerPlakat}
+					alt='Zeltlager 2023 Plakat'
+					className='shadow-xl rounded-md hover:bg-base-200 '
+				/>
+				<div className='text-justify flex-1'>
 					<p>
-						Unser diesjähriges, traditionelles Zeltlager findet in der Zeit von
-						Mittwoch, 07. Juni bis Samstag, 10. Juni 2023 (Fronleichnam) in
-						Lemberg auf dem Turngelände statt.
+						Unser diesjähriges, traditionelles Zeltlager findet in der Zeit vom
+						29. Mai bis zum 01. Juni 2024 in Lemberg auf dem Turngelände statt.
 					</p>
 					<p className='font-semibold text-center'>
 						Lagerfeuer - Nachtwanderung - Bastelarbeiten - Spiele u. v. m.
@@ -25,21 +29,15 @@ export default function Zeltlager() {
 					<div className='text-center'>
 						<a
 							download
-							href='/assets/Zeltlager23Plakat.pdf'
-							className='btn btn-primary'
-						>
+							href='/assets/ZeltlagerPlakat.pdf'
+							className='btn btn-primary'>
 							Download Plakat
 						</a>
 					</div>
 				</div>
-				<Image
-					src={ZeltlagerPlakat}
-					alt='Zeltlager 2023 Plakat'
-					className='shadow-xl rounded-md hover:bg-base-200'
-				/>
 			</div>
 			<h2>Anmeldung</h2>
-			Anmeldungen können bis 31. Mai 2023 abgegeben werden bei:
+			Anmeldungen können bis 24. Mai 2024 abgegeben werden bei:
 			<ul className='text-left'>
 				<li>
 					Patric Pfeifer, Rumbergring 41, 66969 Lemberg, Tel.-Nr. 0170/4966560
@@ -56,18 +54,17 @@ export default function Zeltlager() {
 				Der Beitrag pro Person beträgt: 90 € für Mitglieder 120 € für
 				Nichtmitglieder (inkl. Versicherung)
 			</p>
-			<a download href='/assets/Zeltlager23.pdf' className='btn btn-primary'>
+			<a
+				download
+				href='/assets/ZeltlagerAnmeldung.pdf'
+				className='btn btn-primary'>
 				Download Anmeldeformular
 			</a>
 			<h2>Infoblatt</h2>
 			<p className='text-red-600'>
 				Wichtige Informationen rund ums Zeltlager. Bitte unbedingt beachten!
 			</p>
-			<a
-				download
-				href='/assets/Zeltlager23Info.pdf'
-				className='btn btn-primary'
-			>
+			<a download href='/assets/ZeltlagerInfo.pdf' className='btn btn-primary'>
 				Download Infoblatt
 			</a>
 		</PageWrapper>
