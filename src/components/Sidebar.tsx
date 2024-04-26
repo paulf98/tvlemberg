@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Yogakurs from '../../public/images/yogakurs.jpg';
 import DAK from '../../public/images/dak.png';
 import Theyson from '../../public/images/logo_theysohn.svg';
+import Faass from '../../public/images/faass.png';
 import Termine from '../../public/images/Termine24.jpg';
 
 /**
@@ -36,6 +37,12 @@ export default function Sidebar() {
 				target='_blank'
 				className='hover:bg-base-200'>
 				<Image src={Theyson} alt='Daniel Theyson Stiftung' />
+			</a>
+			<a
+				href={'https://cafe-faass.de/'}
+				target='_blank'
+				className='hover:bg-base-200 mx-auto'>
+				<Image src={Faass} alt='Cafe Faass' />
 			</a>
 		</aside>
 	);
