@@ -1,10 +1,8 @@
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
-import TVLTour from '../../public/images/3tvl-tour.jpg';
 import Trainerausbildung from '../../public/images/trainerausbildung.jpg';
 import Sppuelmaschine from '../../public/images/spuelmaschine.jpg';
-import Turnfest from '../../public/images/turnfest.jpg';
 import CardVertical from '../components/CardVertical';
 import Card from '../components/Card';
 
@@ -13,20 +11,6 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				<CardVertical
-					title='TVL Turnfest'
-					text={
-						<div>
-							<p className='font-bold'>Am 07.07.24 ab 10:00 Uhr</p>
-							<p>
-								Es ergeht herzliche Einladung an alle Mitglieder, Freunde und
-								Gönner des TV Lemberg zum Turnfest. Für das leibliche Wohl ist
-								bestens gesorgt.
-							</p>
-						</div>
-					}
-					image={Turnfest}
-				/>
 				<div>
 					<h2 className='text-center'>Heimat lieben 2024</h2>
 					<p className='text-center'>
