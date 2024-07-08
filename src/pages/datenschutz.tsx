@@ -111,33 +111,31 @@ export default function Datenschutz() {
 				Cookies sind Textdateien, welche über einen Internetbrowser auf einem
 				Computersystem abgelegt und gespeichert werden. Durch den Einsatz von
 				Cookies kann die Bereitstellung von diversen Services ermöglicht
-				beziehungsweise Analysen durchgeführt werden.
+				beziehungsweise Analysen durchgeführt werden. Die Internetseite des
+				Vereins verwendet keine Cookies.
 			</p>
 			<p>
 				Die Internetseite des Vereins verwendet
 				<span className='text-underline'>keine</span> Cookies. <br />
 				Daher erscheint auf unserer Internetseite auch kein
 				Einwilligungsdisclaimer nach
-				Telekommunikation-Telemedien-Datenschutz-Gesetz (TTDSG).
+				Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG).
 			</p>
 			<h4>
 				Erfassung von allgemeinen Daten und Informationen ohne Personenbezug
 			</h4>
 			<p>
-				Die Internetseite des Vereins erfasst mit jedem Aufruf der Internetseite
-				durch eine betroffene Person oder ein automatisiertes System eine Reihe
-				von allgemeinen Daten und Informationen. Diese allgemeinen Daten und
-				Informationen werden in den Logfiles des Servers gespeichert. Erfasst
-				werden können die (1) verwendeten Browsertypen und Versionen, (2) das
-				vom zugreifenden System verwendete Betriebssystem, (3) die
-				Internetseite, von welcher ein zugreifendes System auf unsere
-				Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten,
-				welche über ein zugreifendes System auf unserer Internetseite
-				angesteuert werden, (5) das Datum und die Uhrzeit eines Zugriffs auf die
-				Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der
-				Internet-Service-Provider des zugreifenden Systems und (8) sonstige
-				ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von
-				Angriffen auf unsere informationstechnologischen Systeme dienen.
+				Die Internetseite des Vereins enthält aufgrund von gesetzlichen
+				Vorschriften Angaben, die eine schnelle elektronische Kontaktaufnahme zu
+				uns ermöglicht (allgemeine „info“-Adresse). Sofern eine betroffene
+				Person per E-Mail den Kontakt mit dem Verein aufnimmt, werden die von
+				der betroffenen Person übermittelten personenbezogenen Daten automatisch
+				gespeichert. Solche auf freiwilliger Basis von einer betroffenen Person
+				an den Verein übermittelten personenbezogenen Daten werden für Zwecke
+				der Bearbeitung oder der Kontaktaufnahme zur betroffenen Person
+				gespeichert. Es erfolgt keine Weitergabe dieser personenbezogenen Daten
+				an Dritte. Die Verarbeitung fußt auf Art. 6 Abs. 1 lit. b) (z.B.
+				Kommunikation mit Vereinsmitgliedern und Vertragspartnern) DSGVO.
 			</p>
 			<p>
 				Bei der Nutzung dieser allgemeinen Daten und Informationen zieht der
