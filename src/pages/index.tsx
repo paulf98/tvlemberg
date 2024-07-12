@@ -3,14 +3,22 @@ import DSA from '../../public/images/DSA.png';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
 import Trainerausbildung from '../../public/images/trainerausbildung.jpg';
 import Sppuelmaschine from '../../public/images/spuelmaschine.jpg';
+import Helfer from '../../public/images/DankeHelfer.jpg';
 import CardVertical from '../components/CardVertical';
 import Card from '../components/Card';
+import Image from 'next/image';
 
 export default function Home() {
 	return (
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				<Image
+					src={Helfer}
+					alt={'Danke an die Helfer'}
+					className='w-full rounded-md object-contain m-0 mx-auto shadow-lg'
+					loading='lazy'
+				/>
 				<div>
 					<h2 className='text-center'>Heimat lieben 2024</h2>
 					<p className='text-center'>
