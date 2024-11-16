@@ -15,8 +15,12 @@ const LinksList = [
 		link: 'https://blasorchesterlemberg.de',
 	},
 	{
-		name: 'Turnverein Münchweiler',
-		link: 'https://turnverein-muenchweiler.de',
+		name: 'Stützpunktturner',
+		link: 'https://stützpunktturner.de',
+	},
+	{
+		name: 'Turngau Westpfalz',
+		link: 'https://westpfalz-turngau.de',
 	},
 	{
 		name: 'Pfälzer Turnerbund',
@@ -34,10 +38,7 @@ const LinksList = [
 		name: 'Leichtathletikverband Pfalz',
 		link: 'https://lv-pfalz.de',
 	},
-	{
-		name: 'Turngau Westpfalz',
-		link: 'https://westpfalz-turngau.de',
-	},
+
 	{
 		name: 'Sportbund Pfalz',
 		link: 'https://sportbund.de',
@@ -46,10 +47,7 @@ const LinksList = [
 		name: 'Deutscher Olympischer Sportbund',
 		link: 'https://dosb.de',
 	},
-	{
-		name: 'Stützpunktturner',
-		link: 'https://stützpunktturner.de',
-	},
+
 	{
 		name: 'Volleyballverband Pfalz',
 		link: 'https://vvp-online.de',
@@ -83,8 +81,7 @@ export default function Links() {
 										href={link.link}
 										target={'_blank'}
 										rel={'noreferrer'}
-										className='link link-primary'
-									>
+										className='link link-primary'>
 										{link.name}
 									</Link>
 								</td>

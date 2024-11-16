@@ -12,7 +12,7 @@ export default function Sportprogramm() {
 			/>
 			<a
 				className='btn btn-primary mt-4'
-				href='/assets/Sportporgramm23.pdf'
+				href='/assets/Sportprogramm23.pdf'
 				download>
 				Download als PDF
 			</a>

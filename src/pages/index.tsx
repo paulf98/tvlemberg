@@ -1,11 +1,11 @@
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
-import Trainerausbildung from '../../public/images/trainerausbildung.jpg';
-import Sppuelmaschine from '../../public/images/spuelmaschine.jpg';
-import Helfer from '../../public/images/DankeHelfer.jpg';
+import Theaterabende from '../../public/images/theaterabende-2025.png';
+import HeimatLieben from '../../public/images/heimat-lieben24.png';
+import Pfalzmeister from '../../public/images/pfalzmeister.png';
+import Turnen from '../../public/images/Gerätturnen.png';
 import CardVertical from '../components/CardVertical';
-import Card from '../components/Card';
 import Image from 'next/image';
 
 export default function Home() {
@@ -13,47 +13,84 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				<Image
-					src={Helfer}
-					alt={'Danke an die Helfer'}
-					className='w-full rounded-md object-contain m-0 mx-auto shadow-lg'
-					loading='lazy'
-				/>
-				<div>
-					<h2 className='text-center'>Heimat lieben 2024</h2>
-					<p className='text-center'>
-						Aktuell haben wir für zwei Projekte bei der Heimat lieben Aktion der
-						Sparkasse Südwestpfalz um Hilfe gebeten.
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2>Theaterabende 2025</h2>
+					<p className='text-justify'>
+						Unsere Theatermädels präsentieren im kommenden Frühjahr die Komödie
+						mit dem Titel
 					</p>
-					<div className='flex flex-col items-center md:items-start md:flex-row gap-8 py-8'>
-						<Card
-							title='Jugend - Unterstützung der Trainerausbildung'
-							text={
-								<p>
-									Ein fachlich lizenzierter Übungsleiter ermöglicht ein
-									sportart-spezifisches und leistungsorientiertes Training. Um
-									die Qualifizierung für unsere Übungsleiter zu zahlen,
-									benötigen wir Eure Unterstützung.
-								</p>
-							}
-							image={Trainerausbildung}
-							link='https://www.heimat-lieben.de/project/unterstuetzung-der-trainerausbildung/'
-							linkText='Zur Aktion'
-						/>
-						<Card
-							title='Neue Gastro-Spülmaschine'
-							text={
-								<p>
-									Unsere Gastro-Spülmaschine ist in die Jahre gekommen und soll
-									repariert werden, da wir sie brauchen, um eine Vielzahl von
-									Events zu veranstalten.
-								</p>
-							}
-							image={Sppuelmaschine}
-							link='https://www.heimat-lieben.de/project/neue-spuelmaschine/'
-							linkText='Zur Aktion'
-						/>
-					</div>
+					<Image src={Theaterabende} alt='Theaterabende 2025' />
+				</div>
+
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2>Vier Titel bei den Rheinland-Pfalzmeisterschaften</h2>
+					<p className='text-justify'>
+						Die Leichtathletik-Saison 2024 geht in die Endphase. Von rund 50
+						regionalen und überregionalen Wettkämpfen kamen unsere Sportler mit
+						zahlreichen guten Platzierungen und Podestplätzen zurück. Ein
+						Highlight bildeten am 10.11.2024 in Laubach/Hunsrück die Rheinland-
+						Pfalzmeisterschaften im Crosslauf, wo gleich vier Leichtathleten
+						eine Goldmedaille in Empfang nahmen. Die 12jährige Emilia Becker
+						wurde in 5:39 Minuten erstmals Rheinland-Pfalzmeisterin im
+						Crosslauf. Nach 1540 Metern hatte Emilia zehn Sekunden Vorsprung auf
+						die W12-Zweitplatzierte und ließ zudem 20 Mädchen der Altersklasse
+						U14 hinter sich. Mit einer Zeit von 16:01 Minuten ist Paula Franz
+						neue Landesmeisterin der weiblichen Jugend U20.
+						Rheinland-Pfalzmeister auf der 9050-Meter-Langdistanz wurde
+						Alexander Köhler. Von Beginn an setzte sich der 27-Jährige an die
+						Spitze des Läuferfeldes. Nur in der ersten von fünf Runden konnte
+						Verfolger Martin Müller (LG Meulenwald Föhren) mithalten und
+						gratulierte Alexander für den Titelgewinn nach 32:11 Minuten im
+						Ziel. Den vierten Titel bei den Rheinland-Pfalzmeisterschaften für
+						den TV Lemberg steuerte Susanne Meyer bei, die in 38:14 Minuten die
+						Frauenwertung gewann. Drei Bronzemedaillen von Ole Schöndorf (Jugend
+						M15), Sophie Meyer (Jugend W14) und die U16-Mannschaft in der
+						Besetzung Fredrik Arnold, David Bauer und Ole Schöndorf
+						komplettierten die Medaillensammlung.
+					</p>
+					<Image
+						src={Pfalzmeister}
+						alt='Pfalzmeister Läufer'
+						className='rounded-md '
+					/>
+				</div>
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2>Wir sagen Danke für die Unterstützung,</h2>
+					<p className='text-justify'>
+						auf der Spendenplattform „Heimat lieben“ der Sparkasse Südwestpfalz.
+						Die engagierten Vereinsförderer haben mit dem Einlösen der
+						Spendencodes unsere eingereichten Projekte gesichert. Die in die
+						Jahre gekommene Spülmaschine muss ersetzt werden, damit unser
+						Küchenteam weiterhin effizient arbeiten kann und auch künftig
+						kulinarisch gelungenene Vereinsveranstaltungen stattfinden. 69
+						Prozent des Projektes konnten mit eurer Hilfe finanziert werden. Mit
+						dem zweiten Projekt möchte der TVL seine Übungsleiter aus- und
+						fortbilden, um ein sportart- spezifisches und leistungsorientiertes
+						Training zu ermöglichen. Eine Vollfinanzierung ist nicht gelungen,
+						doch jeder Euro hilft bei der Jugendarbeit. Im Namen des gesamten
+						Turnvereins dafür herzlichen Dank. Mit sportlichen Grüßen Die
+						Vorstandschaft
+					</p>
+					<Image src={HeimatLieben} className='' alt='Heimat Lieben 2024' />
+				</div>
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2>Pfalzmeister mit großem Vorsprung</h2>
+					<p className='text-justify'>
+						Auf einen goldenen Herbst blicken die Gerätturnerinnen. Bei den
+						Pfalz-Meisterschaften am 29.09.2024 in Bad Dürkheim erturnten die
+						beiden TVL-Teams zwei Medaillensätze. Mannschaftsgold ging an die
+						Turnerinnen der{' '}
+						<span className='whitespace-nowrap'>AK-Stufen 7-10</span>. Nach
+						ihrem sehr guten Auswahl Pflicht- Vierkampf mit 164,10 Punkten
+						hatten Charlotte Adler, Maëlle Burkhart, Katharina Nussbaum, Ksenya
+						Varban und Marli Goldtooth über acht Punkte Vorsprung auf den
+						Zweitplatzierten, den TV Erlenbach. Im Auswahl Pflicht-Vierkampf AK7
+						erreichten die TVL-Turnerinnen Mila Bartonneck, Michele Bender, Elsa
+						Engermann, Karter Goss, Za’Naiya Hines, Emma Scheidel und Emma
+						Wafzig mit 143,50 Punkten den dritten Platz, hinter der TSG Haßloch
+						und dem TV Wörth.
+					</p>
+					<Image src={Turnen} alt='Geräteturnerinnen' className='rounded-md' />
 				</div>
 
 				{/* <CardVertical
