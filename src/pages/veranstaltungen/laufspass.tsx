@@ -3,6 +3,10 @@ import Laufspass1 from '../../../public/images/Laufspass1.jpg';
 
 const PastResults = [
 	{
+		year: 2024,
+		link: 'https://my.raceresult.com/281995/results',
+	},
+	{
 		year: 2023,
 		link: 'https://my.raceresult.com/236854/results',
 	},
