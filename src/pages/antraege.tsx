@@ -17,8 +17,7 @@ export default function Antraege() {
 				<a
 					download
 					className='btn btn-primary'
-					href='/assets/Aufnahmeantrag.pdf'
-				>
+					href='/assets/Aufnahmeantrag.pdf'>
 					Download
 				</a>
 			</div>
@@ -31,34 +30,32 @@ export default function Antraege() {
 				<a
 					download
 					className='btn btn-primary'
-					href='/assets/Beitragsordnung.pdf'
-				>
+					href='/assets/Beitragsordnung.pdf'>
 					Download
 				</a>
 				<h2>Mitgliedsbeiträge</h2>
 				<p>
-					Die Mitgliedsbeiträge ab 2023, gemäß Beschluss der
-					Mitgliederversammlung vom 10.11.2021, findest du nachfolgend als
-					Download
+					Die Mitgliedsbeiträge ab 01.01.2025, gemäß Beschluss der
+					Mitgliederversammlung vom 26.07.2023, findest du nachfolgend als
+					Download.
 				</p>
 				<a
 					download
 					className='btn btn-primary'
-					href='/assets/BeitragsordnungAnhang.pdf'
-				>
+					href='/assets/BeitragsordnungAnhang.pdf'>
 					Download
 				</a>
 			</div>
 			<div>
 				<h2>Änderungsmeldung Mitgliedschaft</h2>
 				<p>
-					Wenn sich Ihre Mitgliedsdaten geändert haben, können Sie nachfolgend das Formular zur Änderung der Daten herunterladen.
+					Wenn sich Ihre Mitgliedsdaten geändert haben, können Sie nachfolgend
+					das Formular zur Änderung der Daten herunterladen.
 				</p>
 				<a
 					download
 					className='btn btn-primary'
-					href='/assets/Aenderungsmeldung.pdf'
-				>
+					href='/assets/Aenderungsmeldung.pdf'>
 					Download
 				</a>
 			</div>
@@ -71,8 +68,7 @@ export default function Antraege() {
 				<a
 					download
 					className='btn btn-primary'
-					href='/assets/EinwilligungPersonenbilder.pdf'
-				>
+					href='/assets/EinwilligungPersonenbilder.pdf'>
 					Download
 				</a>
 			</div>
