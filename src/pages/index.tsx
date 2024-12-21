@@ -5,6 +5,7 @@ import Theaterabende from '../../public/images/theaterabende-2025.png';
 import HeimatLieben from '../../public/images/heimat-lieben24.png';
 import Pfalzmeister from '../../public/images/pfalzmeister.png';
 import Turnen from '../../public/images/Gerätturnen.png';
+import Weihnachten from '../../public/images/Weihnachten.png';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 
@@ -13,6 +14,28 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				<CardVertical
+					title='Frohe Weihnachten!'
+					text={
+						<div>
+							<p className='text-sm text-justify m-0'>
+								Der Turnverein Lemberg wünscht allen Mitgliedern, Sportlern,
+								Übungsleitern und Unterstützern ein frohes und besinnliches
+								Weihnachtsfest, sowie ein gesundes und erfolgreiches Jahr 2025.
+								Ein herzliches Dankeschön an alle, die uns das ganze Jahr über
+								bei unseren Veranstaltungen und Arbeitseinsätzen in jeglicher
+								Form unterstützt haben. Ein ganz besonderer Dank gilt unseren
+								Sportlern, die auch 2024 mit ihren Erfolgen den TV Lemberg
+								regional und überregional bekannt machten. Ohne eure Hilfe und
+								Engagement hätte sich vieles nicht realisieren lassen. Vielen
+								herzlichen Dank!
+							</p>
+							<p className='italic mb-0'>Die Vorstandschaft</p>
+						</div>
+					}
+					image={Weihnachten}
+				/>
+
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2>Theaterabende 2025</h2>
 					<p className='text-justify'>
