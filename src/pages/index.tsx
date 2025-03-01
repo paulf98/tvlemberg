@@ -5,7 +5,6 @@ import Theaterabende from '../../public/images/theaterabende-2025.png';
 import HeimatLieben from '../../public/images/heimat-lieben24.png';
 import Pfalzmeister from '../../public/images/pfalzmeister.png';
 import Turnen from '../../public/images/Gerätturnen.png';
-import Fasching2025 from '../../public/images/Fasching2025.jpg';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 
@@ -14,28 +13,6 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				<CardVertical
-					title='Fasching 2025'
-					text={
-						<div>
-							<h3 className='mt-0'>Vermoddelte Turnstunde</h3>
-							<p className='text-sm text-justify m-0'>
-								Am 21.05.2025 ab 20.11 Uhr findet die vermoddelte Turnstunde
-								statt. <a href='https://djbooze.de'>DJ Booze</a> wird mit
-								Party-Schlager und Faschingshits für Stimmung sorgen. Außerdem
-								haben wir natürlich auch wieder einiges vorbereitet.
-							</p>
-							<h3 className='mt-0'>Kinderfasching</h3>
-							<p className='text-sm text-justify m-0'>
-								Am 23.02.2025 findet ab 14:00 Uhr auch wieder der Kinderfasching
-								in unserer Turnhalle statt. Es gibt Musik, Spiele und eine
-								Kinder-Cocktail Bar.
-							</p>
-						</div>
-					}
-					image={Fasching2025}
-				/>
-
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2>Theaterabende 2025</h2>
 					<p className='text-justify'>
