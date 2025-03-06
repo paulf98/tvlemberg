@@ -5,6 +5,9 @@ import Theaterabende from '../../public/images/theaterabende-2025.png';
 import HeimatLieben from '../../public/images/heimat-lieben24.png';
 import Pfalzmeister from '../../public/images/pfalzmeister.png';
 import Turnen from '../../public/images/Gerätturnen.png';
+import PresseBericht from '../../public/images/Presse-Bericht.png';
+import QRCode from '../../public/images/QR-Code.png';
+import Sportlerwahl from '../../public/images/LogoSportlerwahl.png';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 
@@ -13,6 +16,42 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2 className='text-center'>Deine Stimme zählt!</h2>
+					<p className='text-justify'>
+						Die Rheinpfalz ruft zur Sportlerwahl 2024 auf. In der Kategorie
+						Sportler steht auch unser Leichtathlet Alexander Köhler zur Wahl.
+						Der TVL bittet für Alexander abzustimmen. Entweder nachfolgend den
+						QR-Code mit dem Smartphone scannen und man wird weitergeleitet, oder
+						im Internet auf die Homepage der RHEINPFALZ gehen und die
+						Sportlerwahl Pirmasens („www.rheinpfalz.de/sportlerwahl-pirmasens“)
+						anklicken. Wichtig: Jeder hat nur eine Stimme, Mehrfach-Stimmabgaben
+						werden nicht berücksichtigt. Unter allen Wählern verlost die
+						RHEINPFALZ ein Tablet. Abstimmungsschluss ist Sonntag, der 23. März
+						2025.
+					</p>
+					<div className='flex flex-row items-stretch justify-center gap-8'>
+						<Image
+							src={QRCode}
+							alt='QR Code'
+							className='rounded-md m-0 mx-auto max-w-xs'
+						/>
+						<div className='mt-auto'>
+							<h4>Vielen Dank für Deine Stimme!</h4>
+							<Image
+								src={Sportlerwahl}
+								alt='Logo Sportlerwahl'
+								className='rounded-md mx-auto max-w-xs'
+							/>
+						</div>
+					</div>
+					<Image
+						src={PresseBericht}
+						alt='Pressebericht über Alexander Köhler'
+						className='rounded-md mx-auto max-w-xs'
+					/>
+				</div>
+
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2>Theaterabende 2025</h2>
 					<p className='text-justify'>
