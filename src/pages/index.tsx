@@ -6,6 +6,7 @@ import HeimatLieben from '../../public/images/heimat-lieben24.png';
 import Pfalzmeister from '../../public/images/pfalzmeister.png';
 import Turnen from '../../public/images/Gerätturnen.png';
 import PresseBericht from '../../public/images/Presse-Bericht.png';
+import Sportgelaende from '../../public/images/sportgelaende.jpg';
 import QRCode from '../../public/images/QR-Code.png';
 import Sportlerwahl from '../../public/images/LogoSportlerwahl.png';
 import CardVertical from '../components/CardVertical';
@@ -16,8 +17,9 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				{/* SPORTLERWAHL */}
 				<div className='card bg-base-100 shadow-xl p-8'>
-					<h2 className='text-center'>Deine Stimme zählt!</h2>
+					<h2 className='text-center mt-0'>Deine Stimme zählt!</h2>
 					<p className='text-justify'>
 						Die Rheinpfalz ruft zur Sportlerwahl 2024 auf. In der Kategorie
 						Sportler steht auch unser Leichtathlet Alexander Köhler zur Wahl.
@@ -30,11 +32,11 @@ export default function Home() {
 						RHEINPFALZ ein Tablet. Abstimmungsschluss ist Sonntag, der 23. März
 						2025.
 					</p>
-					<div className='flex flex-row items-stretch justify-center gap-8'>
+					<div className='flex flex-row max-w-100 justify-center gap-8'>
 						<Image
 							src={QRCode}
 							alt='QR Code'
-							className='rounded-md m-0 mx-auto max-w-xs'
+							className='rounded-md m-0 mx-auto max-w-[200px]'
 						/>
 						<div className='mt-auto'>
 							<h4>Vielen Dank für Deine Stimme!</h4>
@@ -48,7 +50,33 @@ export default function Home() {
 					<Image
 						src={PresseBericht}
 						alt='Pressebericht über Alexander Köhler'
-						className='rounded-md mx-auto max-w-xs'
+						className='rounded-md shadow-lg mx-auto max-w-xs'
+					/>
+				</div>
+
+				{/* HEIMAT LIEBEN */}
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2 className='mt-0 text-center'>
+						Rasentraktor für das TVL Sportgelände
+					</h2>
+					<p className='text-justify'>
+						Mit unserem ausgedehnten Freigelände und einer wettkampftauglichen
+						Leichtathletikanlage verfügen wir über eine große Grünfläche. Gerade
+						diese benötigen eine regelmäßige und arbeitsintensive Pflege. Hierzu
+						sind leistungsstarke Gartengeräte wie zum Beispiel ein effizienter
+						und hochwertiger Aufsitzrasenmäher notwendig.
+					</p>
+					<a
+						className='btn btn-primary mx-auto'
+						href='https://www.heimat-lieben.de/project/rasentraktor-fuer-das-tvl-sportgelaende/'
+						target='_blank'>
+						Zum Projekt
+					</a>
+
+					<Image
+						className='rounded-md shadow-lg m-0 mt-4 mx-auto'
+						src={Sportgelaende}
+						alt='Sportgelände'
 					/>
 				</div>
 
