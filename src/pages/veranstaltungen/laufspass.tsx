@@ -47,16 +47,15 @@ const PastResults = [
 export default function Laufspass() {
 	return (
 		<div className='text-center prose mx-auto'>
-			<h1 className='mb-8'>Wilkommen beim Lemberger Laufspass!</h1>
+			<h1 className='mb-8'>Willkommen beim Lemberger Laufspass!</h1>
 			<p>
-				Der 10. Lemberger Laufspass findet in seinem Jubiläumsjahr erstmals im
-				Rahmen der WasgauCup-Laufserie statt und bildet dort den diesjährigen
-				Auftakt. Der TV Lemberg würde Dich gerne am 01.05.2024 begrüßen und
-				wünscht Dir eine erfolgreiche Teilnahme. Zur gezielten Vorbereitung
-				bietet der Turnverein Lemberg zwei Trainingsläufe unter der Leitung von
-				Volker Ringelspacher an. Donnerstag, 04. April um 18 Uhr Sonntag, 14.
-				April um 10 Uhr Treffpunkt ist jeweils der Parkplatz unterhalb der
-				Burgruine Lemberg.
+				Der 11. Lemberger Laufspass findet erstmals im Rahmen des Laufladen-Cups
+				und der WasgauCup-Laufserie statt. Der TV Lemberg würde Dich gerne am
+				<strong> 11.05.2025</strong> begrüßen und wünscht Dir eine erfolgreiche
+				Teilnahme. Zur gezielten Vorbereitung bietet der Turnverein Lemberg zwei
+				Trainingsläufe unter der Leitung von Volker Ringelspacher an. Die
+				Termine dazu werden noch veröffentlicht. Treffpunkt ist jeweils der
+				Parkplatz unterhalb der Burgruine Lemberg.
 			</p>
 			<a
 				href={'https://my.raceresult.com/281995/info'}
@@ -69,7 +68,7 @@ export default function Laufspass() {
 				alt='Laufspass'
 				className='mx-auto my-4 shadow-md rounded-md border'
 			/>
-			<a download className='btn btn-primary' href='/assets/Laufspass2024.pdf'>
+			<a download className='btn btn-primary' href='/assets/Laufspass2025.pdf'>
 				Download als PDF
 			</a>
 			<h1 className='my-8'>Ergebnisse der vorherigen Läufe</h1>
