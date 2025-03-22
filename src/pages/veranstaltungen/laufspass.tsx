@@ -58,7 +58,7 @@ export default function Laufspass() {
 				Parkplatz unterhalb der Burgruine Lemberg.
 			</p>
 			<a
-				href={'https://my.raceresult.com/281995/info'}
+				href={'https://my.raceresult.com/318709/registration'}
 				target='_blank'
 				className='btn btn-primary mb-8'>
 				Zur Anmeldung bei Raceresult
