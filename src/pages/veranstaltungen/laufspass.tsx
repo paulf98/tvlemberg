@@ -53,9 +53,11 @@ export default function Laufspass() {
 				und der WasgauCup-Laufserie statt. Der TV Lemberg würde Dich gerne am
 				<strong> 11.05.2025</strong> begrüßen und wünscht Dir eine erfolgreiche
 				Teilnahme. Zur gezielten Vorbereitung bietet der Turnverein Lemberg zwei
-				Trainingsläufe unter der Leitung von Volker Ringelspacher an. Die
-				Termine dazu werden noch veröffentlicht. Treffpunkt ist jeweils der
-				Parkplatz unterhalb der Burgruine Lemberg.
+				drei Trainingsläufe unter der Leitung von Volker Ringelspacher und
+				Nathan Schmitt an. Die Termine dazu werden noch veröffentlicht.
+				Donnerstag 24.04 (18 Uhr) - Sonntag 27.04. (9.30 Uhr) - Montag 28.04 (18
+				Uhr) Treffpunkt ist jeweils der Parkplatz unterhalb der Burgruine
+				Lemberg.
 			</p>
 			<a
 				href={'https://my.raceresult.com/318709/registration'}
