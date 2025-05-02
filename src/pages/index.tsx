@@ -17,43 +17,6 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				{/* SPORTLERWAHL */}
-				<div className='card bg-base-100 shadow-xl p-8'>
-					<h2 className='text-center mt-0'>Deine Stimme zählt!</h2>
-					<p className='text-justify'>
-						Die Rheinpfalz ruft zur Sportlerwahl 2024 auf. In der Kategorie
-						Sportler steht auch unser Leichtathlet Alexander Köhler zur Wahl.
-						Der TVL bittet für Alexander abzustimmen. Entweder nachfolgend den
-						QR-Code mit dem Smartphone scannen und man wird weitergeleitet, oder
-						im Internet auf die Homepage der RHEINPFALZ gehen und die
-						Sportlerwahl Pirmasens („www.rheinpfalz.de/sportlerwahl-pirmasens“)
-						anklicken. Wichtig: Jeder hat nur eine Stimme, Mehrfach-Stimmabgaben
-						werden nicht berücksichtigt. Unter allen Wählern verlost die
-						RHEINPFALZ ein Tablet. Abstimmungsschluss ist Sonntag, der 23. März
-						2025.
-					</p>
-					<div className='flex flex-row max-w-100 justify-center gap-8'>
-						<Image
-							src={QRCode}
-							alt='QR Code'
-							className='rounded-md m-0 mx-auto max-w-[200px]'
-						/>
-						<div className='mt-auto'>
-							<h4>Vielen Dank für Deine Stimme!</h4>
-							<Image
-								src={Sportlerwahl}
-								alt='Logo Sportlerwahl'
-								className='rounded-md mx-auto max-w-xs'
-							/>
-						</div>
-					</div>
-					<Image
-						src={PresseBericht}
-						alt='Pressebericht über Alexander Köhler'
-						className='rounded-md shadow-lg mx-auto max-w-xs'
-					/>
-				</div>
-
 				{/* HEIMAT LIEBEN */}
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2 className='mt-0 text-center'>
@@ -78,15 +41,6 @@ export default function Home() {
 						src={Sportgelaende}
 						alt='Sportgelände'
 					/>
-				</div>
-
-				<div className='card bg-base-100 shadow-xl p-8'>
-					<h2>Theaterabende 2025</h2>
-					<p className='text-justify'>
-						Unsere Theatermädels präsentieren im kommenden Frühjahr die Komödie
-						mit dem Titel
-					</p>
-					<Image src={Theaterabende} alt='Theaterabende 2025' />
 				</div>
 
 				<div className='card bg-base-100 shadow-xl p-8'>
