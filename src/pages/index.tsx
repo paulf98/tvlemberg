@@ -1,14 +1,10 @@
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
-import Theaterabende from '../../public/images/theaterabende-2025.png';
 import HeimatLieben from '../../public/images/heimat-lieben24.png';
 import Pfalzmeister from '../../public/images/pfalzmeister.png';
 import Turnen from '../../public/images/Gerätturnen.png';
-import PresseBericht from '../../public/images/Presse-Bericht.png';
 import Sportgelaende from '../../public/images/sportgelaende.jpg';
-import QRCode from '../../public/images/QR-Code.png';
-import Sportlerwahl from '../../public/images/LogoSportlerwahl.png';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 
