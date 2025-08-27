@@ -4,7 +4,7 @@ import DAK from '../../public/images/dak.png';
 import Theyson from '../../public/images/logo_theysohn.svg';
 import Faass from '../../public/images/faass.png';
 import Termine25 from '../../public/images/Termine25.jpg';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 /**
  * Sidebar component that shows news
@@ -12,10 +12,55 @@ import { useState } from 'react';
  */
 export default function Sidebar() {
 	const [isOpen, setIsOpen] = useState(false);
+	const [isDragging, setIsDragging] = useState(false);
+	const [dragOffset, setDragOffset] = useState(0);
+	const sheetRef = useRef<HTMLDivElement>(null);
+	const startY = useRef(0);
+	const currentY = useRef(0);
 
 	const toggleSheet = () => {
 		setIsOpen(!isOpen);
+		setDragOffset(0);
 	};
+
+	const handleTouchStart = (e: React.TouchEvent) => {
+		setIsDragging(true);
+		startY.current = e.touches[0].clientY;
+		currentY.current = e.touches[0].clientY;
+	};
+
+	const handleTouchMove = (e: React.TouchEvent) => {
+		if (!isDragging) return;
+
+		currentY.current = e.touches[0].clientY;
+		const deltaY = currentY.current - startY.current;
+
+		// Only allow downward dragging
+		if (deltaY > 0) {
+			setDragOffset(deltaY);
+		}
+	};
+
+	const handleTouchEnd = () => {
+		if (!isDragging) return;
+
+		setIsDragging(false);
+
+		// If dragged down more than 100px, close the sheet
+		if (dragOffset > 100) {
+			setIsOpen(false);
+		}
+
+		setDragOffset(0);
+	};
+
+	// Reset drag state when sheet opens/closes
+	useEffect(() => {
+		if (!isOpen) {
+			setDragOffset(0);
+			setIsDragging(false);
+		}
+	}, [isOpen]);
 
 	return (
 		<>
@@ -70,7 +115,16 @@ export default function Sidebar() {
 					/>
 
 					{/* Bottom Sheet */}
-					<div className='lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-base-100 rounded-t-3xl shadow-2xl max-h-[85vh] overflow-y-auto'>
+					<div
+						ref={sheetRef}
+						className='lg:hidden fixed bottom-0 left-0 right-0 z-50 bg-base-100 rounded-t-3xl shadow-2xl max-h-[85vh] overflow-y-auto'
+						style={{
+							transform: `translateY(${dragOffset}px)`,
+							transition: isDragging ? 'none' : 'transform 0.2s ease-out',
+						}}
+						onTouchStart={handleTouchStart}
+						onTouchMove={handleTouchMove}
+						onTouchEnd={handleTouchEnd}>
 						{/* Handle */}
 						<div className='flex justify-center pt-3 pb-2'>
 							<div className='w-12 h-1 bg-base-300 rounded-full'></div>
@@ -122,7 +176,7 @@ export default function Sidebar() {
 								<a
 									href={'https://cafe-faass.de/'}
 									target='_blank'
-									className='hover:bg-base-200 rounded-lg p-2 text-center transition-colors duration-200'>
+									className='hover:bg-primary-focus rounded-lg p-2 text-center transition-colors duration-200'>
 									<Image src={Faass} alt='Cafe Faass' className='mx-auto' />
 								</a>
 							</div>
