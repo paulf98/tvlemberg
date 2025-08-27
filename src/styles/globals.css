@@ -46,3 +46,54 @@ body {
 	transform: translateY(100%);
 	transition: transform 200ms ease-in;
 }
+
+/* Mobile navigation improvements */
+@media (max-width: 1024px) {
+	/* Ensure touch targets are at least 44px */
+	.navbar .btn {
+		min-height: 44px;
+		min-width: 44px;
+	}
+
+	/* Improve mobile menu readability */
+	.drawer-side {
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+	}
+
+	/* Smooth scroll for mobile menu */
+	.drawer-side nav {
+		scrollbar-width: thin;
+		scrollbar-color: hsl(var(--bc) / 0.3) transparent;
+	}
+
+	.drawer-side nav::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	.drawer-side nav::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	.drawer-side nav::-webkit-scrollbar-thumb {
+		background: hsl(var(--bc) / 0.3);
+		border-radius: 2px;
+	}
+}
+
+/* Enhanced focus states for accessibility */
+.navbar button:focus-visible,
+.navbar a:focus-visible {
+	outline: 2px solid hsl(var(--p));
+	outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+.navbar * {
+	transition: all 0.2s ease-in-out;
+}
+
+/* Mobile menu backdrop blur effect */
+.drawer-overlay {
+	backdrop-filter: blur(4px);
+	background-color: rgba(0, 0, 0, 0.4);
+}
