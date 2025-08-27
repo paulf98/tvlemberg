@@ -1,38 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TV Lemberg Website
 
-## Getting Started
+A modern, responsive website for the Turnverein 1891 Lemberg e.V.
 
-First, run the development server:
+## Mobile-First Sidebar Design
+
+The website now features a smart mobile-friendly sidebar system that ensures all important content is accessible on all devices:
+
+### Desktop Experience
+
+- Traditional sidebar visible on large screens (lg: breakpoint and above)
+- Full-width content with sidebar on the right
+- All news, events, and partner information readily available
+
+### Mobile Experience
+
+- **Sidebar hidden** on mobile devices to maximize content space
+- **Quick Access Section**: Key sidebar content (Termine 2025, partner logos) displayed inline at the top of the homepage
+- **Floating Action Button**: Info button (ℹ️) in bottom-right corner for easy access
+- **Bottom Sheet**: Slides up from bottom when info button is tapped, showing full sidebar content
+- **Smart Animations**: Smooth slide-up/down transitions with backdrop overlay
+
+### Key Features
+
+- **Responsive Design**: Automatically adapts to screen size
+- **Touch-Friendly**: Large touch targets and intuitive gestures
+- **Accessibility**: Keyboard navigation support (ESC key to close)
+- **Performance**: Smooth animations with CSS transitions
+- **Content Preservation**: No information is lost on mobile devices
+
+### Technical Implementation
+
+- Uses Tailwind CSS for responsive design
+- React hooks for state management
+- CSS animations for smooth transitions
+- Mobile-first approach with progressive enhancement
+
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Install dependencies
+pnpm install
+
+# Run development server
 pnpm dev
+
+# Build for production
+pnpm build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- DaisyUI
