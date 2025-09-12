@@ -14,32 +14,6 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				{/* COMEDY DINNER */}
-				<div className='card bg-base-100 shadow-xl p-8'>
-					<h2 className='mt-0 text-center'>Comedy-Dinner - Neues von der Familie Härtschd!</h2>
-					<p className='text-justify'>
-						Am 20.09. um 19:30 Uhr (Einlass 18 Uhr) findet in der Turnhalle Lemberg ein weiterer
-						unterhaltsamer Comedy-Dinner Abend statt. Genießen Sie köstliche Speisen, während Sie
-						sich von der humorvollen Familie Härtschd unterhalten lassen.
-					</p>
-					<div className='text-center mb-4'>
-						<p className='font-bold text-lg'>Eintritt:</p>
-						<p>VORVERKAUF: 16,- € | ABENDKASSE: 18,- €</p>
-						<p className='text-sm'>(Speisen & Getränke nicht im Eintrittspreis enthalten)</p>
-					</div>
-					<div className='text-center mb-4'>
-						<p className='font-bold'>Vorverkauf:</p>
-						<p>ab 22.08. Donnerstags 18-19:30 Uhr</p>
-						<p>Marion Becker, Karlstraße 1, Lemberg</p>
-						<p>oder 0175 / 3834517</p>
-					</div>
-					<Image
-						className='rounded-md shadow-lg m-0 mt-4 mx-auto'
-						src={Comedy}
-						alt='Comedy-Dinner Plakat'
-					/>
-				</div>
-
 				{/* HEIMAT LIEBEN */}
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2 className='mt-0 text-center'>Rasentraktor für das TVL Sportgelände</h2>
