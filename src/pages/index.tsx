@@ -5,7 +5,7 @@ import HeimatLieben from '../../public/images/heimat-lieben24.png';
 import Pfalzmeister from '../../public/images/pfalzmeister.png';
 import Turnen from '../../public/images/Gerätturnen.png';
 import Sportgelaende from '../../public/images/sportgelaende.jpg';
-import Comedy from '../../public/images/comedy-dinner-25.jpeg';
+import Kerwe from '../../public/images/Kerweplakat2025.png';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 
@@ -14,6 +14,16 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				{/* Kerwe 2025 */}
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2 className='mt-0 text-center'>Kerweparty 2025</h2>
+					<Image
+						className='rounded-md shadow-lg m-0 mt-4 mx-auto'
+						src={Kerwe}
+						alt='Kerweparty 2025'
+					/>
+				</div>
+
 				{/* HEIMAT LIEBEN */}
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2 className='mt-0 text-center'>Rasentraktor für das TVL Sportgelände</h2>
@@ -36,7 +46,6 @@ export default function Home() {
 						alt='Sportgelände'
 					/>
 				</div>
-
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2>Vier Titel bei den Rheinland-Pfalzmeisterschaften</h2>
 					<p className='text-justify'>
@@ -92,7 +101,6 @@ export default function Home() {
 					</p>
 					<Image src={Turnen} alt='Geräteturnerinnen' className='rounded-md' />
 				</div>
-
 				{/* <CardVertical
 					title='Zeltlager 2024'
 					text={
@@ -124,7 +132,6 @@ export default function Home() {
 					}
 					image={Comedy}
 				/> */}
-
 				{/* <CardVertical
 					title='3. TVL Tour'
 					text={
@@ -139,7 +146,6 @@ export default function Home() {
 					}
 					image={TVLTour}
 				/> */}
-
 				<CardVertical
 					title='Übungsleiter/in gesucht'
 					text={
@@ -155,7 +161,6 @@ export default function Home() {
 					}
 					image={TrainerGesucht}
 				/>
-
 				<CardVertical
 					title='Yoga für Schwangere'
 					text={
