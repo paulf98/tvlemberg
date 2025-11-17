@@ -14,16 +14,6 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				{/* Kerwe 2025 */}
-				<div className='card bg-base-100 shadow-xl p-8'>
-					<h2 className='mt-0 text-center'>Kerweparty 2025</h2>
-					<Image
-						className='rounded-md shadow-lg m-0 mt-4 mx-auto'
-						src={Kerwe}
-						alt='Kerweparty 2025'
-					/>
-				</div>
-
 				{/* HEIMAT LIEBEN */}
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2 className='mt-0 text-center'>Rasentraktor für das TVL Sportgelände</h2>
