@@ -2,27 +2,21 @@ export default function Vorstand() {
 	return (
 		<div className='prose mx-auto'>
 			<h1>Unsere Vorstandschaft</h1>
-			<p className='text-gray-700 italic text-sm'>Stand: Juli 2023</p>
-			<h2> Vorsitzende:</h2>
+			<p className='text-gray-700 italic text-sm'>Stand: Dezember 2025</p>
+			<h2>Vorsitzende:</h2>
 			<ul>
-				<li>Bernd Köhler (Öffentlichkeitsarbeit)</li>
-				<li>Michaela Gebhard (Gebäude und Eventmanagement)</li>
+				<li>Michaela Gebhard (Vereinsentwicklung)</li>
 				<li>Susanne Rott (Finanzmanagement)</li>
-				<li>Elena Göller (Vereinsmanagement)</li>
+				<li>Marion Becker (Eventmanagement)</li>
 				<li>Andrea Baas (Sportmanagement)</li>
+				<li>Bernd Köhler (Öffentlichkeitsarbeit)</li>
 			</ul>
 			<h2>Kassengeschäfte</h2>
 			<p>Susanne Rott</p>
 			<h2>Mitgliedschaft- und Beitragsverwaltung:</h2>
-			<p>Elena Göller</p>
+			<p>-</p>
 			<h2>Protokollführung:</h2>
-			<p>Jutta Ernst</p>
-			<h2>Beisitzer:</h2>
-			<ul>
-				<li>Herbert Salzmann</li>
-				<li>Artur Seebach</li>
-				<li>Gerlinde Neumüller</li>
-			</ul>
+			<p>Michaela Gebhard</p>
 			<h2>Leiterin Bewirtungsausschuss:</h2>
 			<p>Elke Stilgenbauer</p>
 			<h2>Leiterin Vergnügungsausschuss:</h2>
@@ -34,7 +28,7 @@ export default function Vorstand() {
 			<h2>Leiterin Jugendausschuss:</h2>
 			<p>Anna-Lena Resch</p>
 			<h2>Kassenprüfer:</h2>
-			<p>Heidi Koch &nbsp; Matthias Kobert</p>
+			<p>Heidi Koch&nbsp;&&nbsp;Matthias Kobert</p>
 		</div>
 	);
 }
