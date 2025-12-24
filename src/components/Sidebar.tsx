@@ -3,7 +3,7 @@ import Yogakurs from '../../public/images/yogakurs.jpg';
 import DAK from '../../public/images/dak.png';
 import Theyson from '../../public/images/logo_theysohn.svg';
 import Faass from '../../public/images/faass.png';
-import Termine25 from '../../public/images/Termine25.jpg';
+import Termine from '../../public/images/Termine26.jpg';
 import { useState, useRef, useEffect } from 'react';
 
 /**
@@ -67,11 +67,11 @@ export default function Sidebar() {
 			{/* Desktop Sidebar */}
 			<aside className='hidden lg:flex flex-col gap-8 w-min-32 max-w-xs min-h-screen p-8'>
 				<h1 className='text-3xl font-bold text-center'>Aktuelles</h1>
-				<a href={Termine25.src} target='_blank' className='hover:bg-base-200'>
+				<a href={Termine.src} target='_blank' className='hover:bg-base-200'>
 					<Image
 						className='shadow-xl rounded-md hover:bg-base-200'
-						src={Termine25}
-						alt='Termine 2025'
+						src={Termine}
+						alt='Termine 2026'
 					/>
 				</a>
 				<Image className='shadow-xl rounded-md hover:bg-base-200' src={Yogakurs} alt='Yogakurs' />
@@ -137,14 +137,10 @@ export default function Sidebar() {
 							{/* Termine 2025 */}
 							<div className='mb-6'>
 								<a
-									href={Termine25.src}
+									href={Termine.src}
 									target='_blank'
 									className='block hover:bg-base-200 rounded-lg p-2 transition-colors duration-200'>
-									<Image
-										className='shadow-lg rounded-md w-full'
-										src={Termine25}
-										alt='Termine 2025'
-									/>
+									<Image className='shadow-lg rounded-md w-full' src={Termine} alt='Termine 2026' />
 								</a>
 							</div>
 
