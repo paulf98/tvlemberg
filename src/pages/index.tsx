@@ -14,28 +14,6 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
-				{/* HEIMAT LIEBEN */}
-				<div className='card bg-base-100 shadow-xl p-8'>
-					<h2 className='mt-0 text-center'>Rasentraktor für das TVL Sportgelände</h2>
-					<p className='text-justify'>
-						Mit unserem ausgedehnten Freigelände und einer wettkampftauglichen Leichtathletikanlage
-						verfügen wir über eine große Grünfläche. Gerade diese benötigen eine regelmäßige und
-						arbeitsintensive Pflege. Hierzu sind leistungsstarke Gartengeräte wie zum Beispiel ein
-						effizienter und hochwertiger Aufsitzrasenmäher notwendig.
-					</p>
-					<a
-						className='btn btn-primary mx-auto'
-						href='https://www.heimat-lieben.de/project/rasentraktor-fuer-das-tvl-sportgelaende/'
-						target='_blank'>
-						Zum Projekt
-					</a>
-
-					<Image
-						className='rounded-md shadow-lg m-0 mt-4 mx-auto'
-						src={Sportgelaende}
-						alt='Sportgelände'
-					/>
-				</div>
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2>Vier Titel bei den Rheinland-Pfalzmeisterschaften</h2>
 					<p className='text-justify'>
@@ -58,22 +36,6 @@ export default function Home() {
 						David Bauer und Ole Schöndorf komplettierten die Medaillensammlung.
 					</p>
 					<Image src={Pfalzmeister} alt='Pfalzmeister Läufer' className='rounded-md ' />
-				</div>
-				<div className='card bg-base-100 shadow-xl p-8'>
-					<h2>Wir sagen Danke für die Unterstützung,</h2>
-					<p className='text-justify'>
-						auf der Spendenplattform „Heimat lieben“ der Sparkasse Südwestpfalz. Die engagierten
-						Vereinsförderer haben mit dem Einlösen der Spendencodes unsere eingereichten Projekte
-						gesichert. Die in die Jahre gekommene Spülmaschine muss ersetzt werden, damit unser
-						Küchenteam weiterhin effizient arbeiten kann und auch künftig kulinarisch gelungenene
-						Vereinsveranstaltungen stattfinden. 69 Prozent des Projektes konnten mit eurer Hilfe
-						finanziert werden. Mit dem zweiten Projekt möchte der TVL seine Übungsleiter aus- und
-						fortbilden, um ein sportart- spezifisches und leistungsorientiertes Training zu
-						ermöglichen. Eine Vollfinanzierung ist nicht gelungen, doch jeder Euro hilft bei der
-						Jugendarbeit. Im Namen des gesamten Turnvereins dafür herzlichen Dank. Mit sportlichen
-						Grüßen Die Vorstandschaft
-					</p>
-					<Image src={HeimatLieben} className='' alt='Heimat Lieben 2024' />
 				</div>
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2>Pfalzmeister mit großem Vorsprung</h2>
