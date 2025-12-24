@@ -1,11 +1,10 @@
 import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
-import HeimatLieben from '../../public/images/heimat-lieben24.png';
 import Pfalzmeister from '../../public/images/pfalzmeister.png';
 import Turnen from '../../public/images/Gerätturnen.png';
-import Sportgelaende from '../../public/images/sportgelaende.jpg';
-import Kerwe from '../../public/images/Kerweplakat2025.png';
+import Weihnachten from '../../public/images/Weihnachten2025.jpg';
+import Volleyball from '../../public/images/Volleyball.jpg';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 
@@ -14,6 +13,51 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2 className='text-center'>Frohe Weihnachten und einen guten Rutsch ins neue Jahr</h2>
+					<p className='text-justify'>
+						Der Turnverein Lemberg wünscht allen Mitgliedern, Sportlern, Übungsleitern und
+						Unterstützern ein frohes und besinnliches Weihnachtsfest im Kreise eurer Liebsten, sowie
+						ein gesundes und erfolgreiches Jahr 2026.
+					</p>
+					<p>
+						Ein herzliches Dankeschön an alle, die uns das ganze Jahr über bei unseren
+						Veranstaltungen und Arbeitseinsätzen in jeglicher Form unterstützt haben. Ohne eure
+						Ideen, Hilfe und Engagement hätten wir vieles nicht realisieren können. Ein ganz
+						besonderer Dank gilt unseren Sportlern und ihren Trainern, die auch 2025 mit zahlreichen
+						sportlichen Erfolgen den Turnverein Lemberg regional und überregional bekannt machten.
+					</p>
+					<p>Vielen herzlichen Dank!</p>
+					<Image src={Weihnachten} alt='Weihnachtsfeier' className='rounded-md' />
+				</div>
+				{/* Volleyball */}
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2 className='text-center'>Volleyball - Erfolgreicher Neustart</h2>
+					<p>
+						Baggern, pritschen, schmettern, blocken - Beim TVL wird wieder aktiv Volleyball
+						gespielt. Seit Anfang Dezember 2025 findet eine Tradition ihre Fortsetzung. Was im
+						Oktober 1980 mit über dreißig Volleyball-Begeisterte und einem einfach auf circa 2,30m
+						Höhe gespannten Seil in unserer Turnhalle begann, dann zwischenzeitlich in den 90er
+						Jahren bis hin zum Aufstieg in die Verbandsliga führte, war 2024 kurzzeitig zu Ende
+						gegangen.
+					</p>
+					<p>
+						Elf junge Volleyballerinnen nahmen nach trainingsreichen Wochen einen neuen Anlauf und
+						spielen wieder aktiv in der Einsteigerliga des Volleyball-Verbandes Pfalz. Gleich am
+						ersten Spieltag, der in Turnierform in Edenkoben stattfand, konnten Elin Hardegger
+						(Trikotnummer 3), Merle Marie Herrmann (13), Soe Ochs (4), Ashley Hildebrand (10), Lea
+						Köhler (12), Alexia Hartmann (6), Jenna Neu (1), Mila Hingst (5) und Pamina Weber (9)
+						zwei deutliche Siege feiern. Mit 25:09 und 25:14 Bällen wurde der TV Kirrweiler
+						bezwungen. Wesentlich spannender verlief das Spiel gegen den stärkeren SC Mutterstadt,
+						doch am Ende stand auch hier ein Zweisatzsieg mit 25:19 und 25:19 Bällen zu Buche. Der
+						nächste Turniertag findet am 11. Januar 2026 in Ludwigshafen-Mundenheim statt, wo die
+						Gegnerinnen von der Heimmannschaft VTV Mundenheim, dem VBC Haßloch und dem ASV Landau
+						kommen. .
+					</p>
+					<Image src={Volleyball} alt='Volleyballmannschaft' className='rounded-md' />
+				</div>
+
+				{/* Rheinland-Pfalzmeisterschaften */}
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2>Vier Titel bei den Rheinland-Pfalzmeisterschaften</h2>
 					<p className='text-justify'>
