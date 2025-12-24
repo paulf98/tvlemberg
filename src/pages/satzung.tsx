@@ -6,18 +6,10 @@ export default function Satzung() {
 				<a download className='btn btn-primary' href='/assets/Satzung.pdf'>
 					Download Satzung 2021
 				</a>
-				<a
-					download
-					className='btn btn-primary'
-					href='/assets/Ehrungsordnung2017.pdf'
-				>
-					Download Ehrungsordnung 2016
+				<a download className='btn btn-primary' href='/assets/Ehrungsordnung 09-10-2024.pdf'>
+					Download Ehrungsordnung 2024
 				</a>
-				<a
-					download
-					className='btn btn-primary'
-					href='/assets/BeitragsordnungAufnahmeantrag.pdf'
-				>
+				<a download className='btn btn-primary' href='/assets/BeitragsordnungAufnahmeantrag.pdf'>
 					Download Beitragsordnung
 				</a>
 			</div>
