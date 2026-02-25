@@ -6,69 +6,51 @@ export default function Antraege() {
 				<h2>Aufnahmeantrag des TV 1891 Lemberg e.V.</h2>
 				<p>
 					<span className='font-bold mb-2'>
-						Ich beantrage hiermit die Aufnahme als Mitglied beim TV 1891 Lemberg
-						e. V.
+						Ich beantrage hiermit die Aufnahme als Mitglied beim TV 1891 Lemberg e. V.
 					</span>
 					<br />
-					Antrag ausdrucken, unterschreiben (damit die Mitgliedschaft gültig
-					wird) und bei dem Abteilungs- oder Übungsleiter abgeben, dann erhältst
-					du innerhalb kurzer Zeit eine schriftliche Bestätigung.
+					Antrag ausdrucken, unterschreiben (damit die Mitgliedschaft gültig wird) und bei dem
+					Abteilungs- oder Übungsleiter abgeben, dann erhältst du innerhalb kurzer Zeit eine
+					schriftliche Bestätigung.
 				</p>
-				<a
-					download
-					className='btn btn-primary'
-					href='/assets/Aufnahmeantrag.pdf'>
+				<a download className='btn btn-primary' href='/assets/Aufnahmeantrag.pdf'>
 					Download
 				</a>
 			</div>
 			<div>
 				<h2>Beitragsordnung</h2>
 				<p>
-					Die Beitragsordnung 2014, gemäß Mitgliederversammlung vom 18.09.2013
-					findest du nachfolgend als Download.
+					Die Beitragsordnung 2026, seit 01.01.2026 gültig, findest du nachfolgend als Download.
 				</p>
-				<a
-					download
-					className='btn btn-primary'
-					href='/assets/Beitragsordnung.pdf'>
+				<a download className='btn btn-primary' href='/assets/Beitragsordnung.pdf'>
 					Download
 				</a>
 				<h2>Mitgliedsbeiträge</h2>
 				<p>
-					Die Mitgliedsbeiträge ab 01.01.2025, gemäß Beschluss der
-					Mitgliederversammlung vom 26.07.2023, findest du nachfolgend als
-					Download.
+					Die Mitgliedsbeiträge ab 01.01.2025, gemäß Beschluss der Mitgliederversammlung vom
+					26.07.2023, findest du nachfolgend als Download.
 				</p>
-				<a
-					download
-					className='btn btn-primary'
-					href='/assets/BeitragsordnungAnhang.pdf'>
+				<a download className='btn btn-primary' href='/assets/BeitragsordnungAnhang.pdf'>
 					Download
 				</a>
 			</div>
 			<div>
 				<h2>Änderungsmeldung Mitgliedschaft</h2>
 				<p>
-					Wenn sich Ihre Mitgliedsdaten geändert haben, können Sie nachfolgend
-					das Formular zur Änderung der Daten herunterladen.
+					Wenn sich Ihre Mitgliedsdaten geändert haben, können Sie nachfolgend das Formular zur
+					Änderung der Daten herunterladen.
 				</p>
-				<a
-					download
-					className='btn btn-primary'
-					href='/assets/Aenderungsmeldung.pdf'>
+				<a download className='btn btn-primary' href='/assets/Aenderungsmeldung.pdf'>
 					Download
 				</a>
 			</div>
 			<div>
 				<h2>Einwilligung Personenbilder</h2>
 				<p>
-					Die Einwilligung in die Veröffentlichung von Personenbildnissen
-					findest du nachfolgend als Download.
+					Die Einwilligung in die Veröffentlichung von Personenbildnissen findest du nachfolgend als
+					Download.
 				</p>
-				<a
-					download
-					className='btn btn-primary'
-					href='/assets/EinwilligungPersonenbilder.pdf'>
+				<a download className='btn btn-primary' href='/assets/EinwilligungPersonenbilder.pdf'>
 					Download
 				</a>
 			</div>

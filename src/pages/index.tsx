@@ -3,8 +3,8 @@ import DSA from '../../public/images/DSA.png';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
 import Pfalzmeister from '../../public/images/pfalzmeister.png';
 import Turnen from '../../public/images/Gerätturnen.png';
-import Weihnachten from '../../public/images/Weihnachten2025.jpg';
 import Volleyball from '../../public/images/Volleyball.jpg';
+import VolleyballTVL from '../../public/images/Volleyball-TVL.jpg';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 
@@ -13,23 +13,38 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				{/* Volleyball */}
 				<div className='card bg-base-100 shadow-xl p-8'>
-					<h2 className='text-center'>Frohe Weihnachten und einen guten Rutsch ins neue Jahr</h2>
-					<p className='text-justify'>
-						Der Turnverein Lemberg wünscht allen Mitgliedern, Sportlern, Übungsleitern und
-						Unterstützern ein frohes und besinnliches Weihnachtsfest im Kreise eurer Liebsten, sowie
-						ein gesundes und erfolgreiches Jahr 2026.
+					<h2 className='text-center'>Volleyball-Einsteigerliga weiblich</h2>
+					<p>
+						Der Turnverein Lemberg führt weiterhin mit weißer Weste die Einsteigerliga des
+						Volleyball- Verbandes Pfalz an. Ungeschlagen und ohne Satzverlust steht das Frauenteam
+						nach dem siebten Spiel an der Tabellenspitze.
 					</p>
 					<p>
-						Ein herzliches Dankeschön an alle, die uns das ganze Jahr über bei unseren
-						Veranstaltungen und Arbeitseinsätzen in jeglicher Form unterstützt haben. Ohne eure
-						Ideen, Hilfe und Engagement hätten wir vieles nicht realisieren können. Ein ganz
-						besonderer Dank gilt unseren Sportlern und ihren Trainern, die auch 2025 mit zahlreichen
-						sportlichen Erfolgen den Turnverein Lemberg regional und überregional bekannt machten.
+						Der vergangene Doppelspieltag fand in Landau statt. Erster Gegner war der VC Hainfeld,
+						ein Verein mit 40jähriger Volleyballgeschichte und war in dieser Zeit schon häufig auf
+						den TV Lemberg getroffen, der dieses Mal als klarer 2:0-Sieger vom Spielfeld ging. „Im
+						ersten Satz spielten die Mädels wie aus einem Guss, mit sehr guten Aufschlägen konnte
+						der VC unter Druck gesetzt werden. Und wenn doch mal was zurückkam, dann wurden mit
+						guten Spielzügen der Punkt fast immer erzielt“, beschreibt Trainer Axel Klug den
+						Satzverlauf, der deutlich mit 25:05 Bällen für den TV Lemberg endete. Mit dem
+						Seitenwechsel hatte das Trainerduo, zudem Bernd Herrmann gehört, den Ersatzspielerinnen
+						zu mehr Spielpraxis verholfen. Die Wechsel rächten sich anfangs, da die eintrainierten
+						Abläufe nicht mehr stimmten. Zahlreiche individuelle Fehler luden die Gegnerinnen zum
+						Mitspielen und Punkten ein. Dennoch bestand zu keiner Zeit die Gefahr des Satzverlustes
+						und der TV Lemberg gewann mit 25:14 Bällen.
 					</p>
-					<p>Vielen herzlichen Dank!</p>
-					<Image src={Weihnachten} alt='Weihnachtsfeier' className='rounded-md' />
+					<p>
+						Im zweiten Spiel des Tages stand der TV Kirrweiler am Netz gegenüber. Trotz einer eher
+						mäßigen Leistung aufgrund von Trainingsrückständen durch Abistress und Krankheit konnten
+						die Volleyballerinnen des TV Lemberg beide Sätze mit jeweils 25:15 Bällen klar gewinnen.
+						Der nächste Spieltag findet am 01. März beim Tabellenzweiten, dem SC Mutterstadt statt.
+					</p>
+
+					<Image src={VolleyballTVL} alt='Volleyballmannschaft TVL' className='rounded-md' />
 				</div>
+
 				{/* Volleyball */}
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2 className='text-center'>Volleyball - Erfolgreicher Neustart</h2>
