@@ -5,6 +5,7 @@ import Pfalzmeister from '../../public/images/pfalzmeister.png';
 import Turnen from '../../public/images/Gerätturnen.png';
 import Volleyball from '../../public/images/Volleyball.jpg';
 import VolleyballTVL from '../../public/images/Volleyball-TVL.jpg';
+import HeimatLieben from '../../public/images/HeimatLieben2026.jpg';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 
@@ -13,6 +14,15 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				{/* Heimat Lieben */}
+				<CardVertical
+					title='Heimat lieben geht wieder los!'
+					text={<p>Unterstütze unseren Verein bei der Aktion &quot;Heimat lieben&quot;!</p>}
+					image={HeimatLieben}
+					link='https://www.heimat-lieben.de/'
+					linkText='Zur Aktion'
+				/>
+
 				{/* Volleyball */}
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2 className='text-center'>Volleyball-Einsteigerliga weiblich</h2>
@@ -112,6 +122,7 @@ export default function Home() {
 					</p>
 					<Image src={Turnen} alt='Geräteturnerinnen' className='rounded-md' />
 				</div>
+
 				{/* <CardVertical
 					title='Zeltlager 2024'
 					text={
