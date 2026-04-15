@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Yogakurs from '../../public/images/yogakurs.jpg';
+import Yogakurs from '../../public/images/YogaSenioren.png';
 import DAK from '../../public/images/dak.png';
 import Theyson from '../../public/images/logo_theysohn.svg';
 import Faass from '../../public/images/faass.png';
