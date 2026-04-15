@@ -1,4 +1,4 @@
-import Yoga from '../../public/images/YogaSenioren.png';
+import Yoga from '../../public/images/Yoga.jpg';
 import DSA from '../../public/images/DSA.png';
 import TrainerGesucht from '../../public/images/trainer-gesucht.jpg';
 import Pfalzmeister from '../../public/images/pfalzmeister.png';
@@ -184,13 +184,14 @@ export default function Home() {
 					image={TrainerGesucht}
 				/>
 				<CardVertical
-					title='Yoga für Senioren'
+					title='Yoga für Schwangere'
 					text={
 						<>
-							<p>Alle Altersgruppen sind Willkommen!</p>
-							<p className='font-bold'>jeden Dienstag um 09 - 10:00 Uhr</p>
+							<p>Alle Trimester und Yogalevel sind Willkommen!</p>
+							<p className='font-bold'>IMMER MONTAGS 17:15-18:15 UHR</p>
 							<p>
-								Infos und Anmeldung per WhatsApp 0176 30754520 oder E-Mail an vaneassa@studio-m.yoga
+								Infos und Anmeldung per WhatsApp 017684548496 oder E-Mail an
+								isabellgross.mobile@gmail.com
 							</p>
 						</>
 					}
