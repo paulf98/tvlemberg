@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Laufspass1 from '../../../public/images/Laufspass.jpg';
+import Laufspass2 from '../../../public/images/Streckenaenderung-2026.jpg';
 
 const PastResults = [
 	{
@@ -67,6 +68,11 @@ export default function Laufspass() {
 				className='btn btn-primary mb-8'>
 				Zur Anmeldung bei Raceresult
 			</a>
+			<Image
+				src={Laufspass2}
+				alt='Streckenänderung'
+				className='mx-auto my-4 mb-8 shadow-md rounded-md border'
+			/>
 			<Image
 				src={Laufspass1}
 				alt='Laufspass'
