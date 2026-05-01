@@ -8,6 +8,7 @@ import VolleyballTVL from '../../public/images/Volleyball-TVL.jpg';
 import HeimatLieben from '../../public/images/HeimatLieben2026.jpg';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
 	return (
@@ -22,6 +23,19 @@ export default function Home() {
 					link='https://www.heimat-lieben.de/'
 					linkText='Zur Aktion'
 				/>
+
+				<div className='card bg-base-100 shadow-xl p-8'>
+					<h2 className='text-center'>Zeltlager 2026</h2>
+					<p className='text-center'>
+						Das Zeltlager ist wieder buchbar. Alle Informationen und die Anmeldung findest du auf
+						unserer Veranstaltungsseite.
+					</p>
+					<div className='text-center'>
+						<Link className='btn btn-primary' target='_blank' href='/veranstaltungen/zeltlager'>
+							Zur Zeltlager-Seite
+						</Link>
+					</div>
+				</div>
 
 				{/* Volleyball */}
 				<div className='card bg-base-100 shadow-xl p-8'>
