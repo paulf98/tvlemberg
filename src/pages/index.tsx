@@ -24,19 +24,6 @@ export default function Home() {
 					linkText='Zur Aktion'
 				/>
 
-				<div className='card bg-base-100 shadow-xl p-8'>
-					<h2 className='text-center'>Zeltlager 2026</h2>
-					<p className='text-center'>
-						Das Zeltlager ist wieder buchbar. Alle Informationen und die Anmeldung findest du auf
-						unserer Veranstaltungsseite.
-					</p>
-					<div className='text-center'>
-						<Link className='btn btn-primary' target='_blank' href='/veranstaltungen/zeltlager'>
-							Zur Zeltlager-Seite
-						</Link>
-					</div>
-				</div>
-
 				{/* Volleyball */}
 				<div className='card bg-base-100 shadow-xl p-8'>
 					<h2 className='text-center'>Volleyball-Einsteigerliga weiblich</h2>
