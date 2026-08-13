@@ -6,6 +6,7 @@ import Turnen from '../../public/images/Gerätturnen.png';
 import Volleyball from '../../public/images/Volleyball.jpg';
 import VolleyballTVL from '../../public/images/Volleyball-TVL.jpg';
 import HeimatLieben from '../../public/images/HeimatLieben2026.jpg';
+import Hochsprung from '../../public/images/hoch-weitsprung-meeting.png';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -15,6 +16,41 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				{/* Hoch- und Weitsprung-Meeting */}
+				<div className='card bg-base-100 shadow-xl overflow-hidden'>
+					<Image
+						src={Hochsprung}
+						alt='Hochsprung beim TV Lemberg'
+						className='rounded-t-md m-0 w-full object-cover max-h-80'
+					/>
+					<div className='card-body'>
+						<h2 className='card-title mt-0'>Hoch- und Weitsprung-Meeting</h2>
+						<p className='font-bold'>Samstag, 19. September 2026 ab 14 Uhr</p>
+						<p>
+							Nach 24 Leichtathletik-Sportfesten (1996 bis 2019) und einer sechsjährigen Pause
+							bietet der Turnverein nun wieder eine offizielle, vom LVP genehmigte
+							Leichtathletik-Veranstaltung an. Hoch- und Weitsprungtalente sind ebenso wie
+							Athletinnen und Athleten mit Ambitionen auf neue Bestleistungen herzlich willkommen.
+						</p>
+						<ul>
+							<li>Altersklassen: U14, U16, U18, U20, Frauen und Männer</li>
+							<li>Meldeschluss: Montag, 14.09.2026 (ausschließlich über LAnet3)</li>
+							<li>Meldegebühr: 4 Euro pro Disziplin</li>
+						</ul>
+						<div className='card-actions justify-end flex-wrap gap-2'>
+							<Link href='/veranstaltungen/hoch-weitsprung' className='btn btn-primary'>
+								Zur Ausschreibung
+							</Link>
+							<a
+								href='/assets/Hoch-Weitsprung-Meeting-Ausschreibung.pdf'
+								className='btn btn-outline'
+								download>
+								PDF herunterladen
+							</a>
+						</div>
+					</div>
+				</div>
+
 				{/* Heimat Lieben */}
 				<CardVertical
 					title='Heimat lieben geht wieder los!'

@@ -69,6 +69,11 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 								</span>
 								<ul className='rounded-box bg-white p-2 z-50 shadow-lg'>
 									<li>
+										<Link href={'/veranstaltungen/hoch-weitsprung'}>
+											Hoch- und Weitsprung-Meeting
+										</Link>
+									</li>
+									<li>
 										<Link href={'/veranstaltungen/laufspass'}>Laufspass</Link>
 									</li>
 									<li>
@@ -169,6 +174,12 @@ export default function Navbar({ children }: { children: React.ReactNode }) {
 							</button>
 							{expandedSections.includes('veranstaltungen') && (
 								<div className='ml-4 space-y-1 animate-fade-in'>
+									<Link
+										href='/veranstaltungen/hoch-weitsprung'
+										className='block w-full p-3 text-left rounded-lg hover:bg-base-200 transition-colors duration-200 text-sm text-base-content/80'
+										onClick={closeMobileMenu}>
+										Hoch- und Weitsprung-Meeting
+									</Link>
 									<Link
 										href='/veranstaltungen/laufspass'
 										className='block w-full p-3 text-left rounded-lg hover:bg-base-200 transition-colors duration-200 text-sm text-base-content/80'
