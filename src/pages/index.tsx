@@ -7,6 +7,7 @@ import Volleyball from '../../public/images/Volleyball.jpg';
 import VolleyballTVL from '../../public/images/Volleyball-TVL.jpg';
 import HeimatLieben from '../../public/images/HeimatLieben2026.jpg';
 import Hochsprung from '../../public/images/hoch-weitsprung-meeting.png';
+import Kerwe from '../../public/images/Kerweplakat.jpg';
 import CardVertical from '../components/CardVertical';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,6 +17,24 @@ export default function Home() {
 		<div className='prose mx-auto'>
 			<h1 className='text-center mb-8'>Neuigkeiten</h1>
 			<div className='flex flex-col items-center justify-center gap-8'>
+				{/* Lemberger Kerweparty */}
+				<CardVertical
+					title='Lemberger Kerweparty'
+					text={
+						<>
+							<p className='font-bold'>Samstag, 24. Oktober 2026 · Freizeithalle Lemberg</p>
+							<p>Einlass ab 19:30 Uhr · Eintritt 6 €</p>
+							<p>
+								Ab 20 Uhr spielt 4Owl (Julian Eulberg &amp; Selina Sophie Verling), danach legt
+								DJ Booze auf. SV Lemberg und TV Lemberg laden herzlich ein.
+							</p>
+						</>
+					}
+					image={Kerwe}
+					link='https://kerwe.lemberg-pfalz.info/'
+					linkText='Zur Kerwe-Homepage'
+				/>
+
 				{/* Hoch- und Weitsprung-Meeting */}
 				<div className='card bg-base-100 shadow-xl overflow-hidden'>
 					<Image
